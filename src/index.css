@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #234af8;
+  --secondary-color: #536390;
+  --font-primary-color: #000000;
+  --font-secondary-color: #ffffff;
+  --bg-color: #f6f6ff;
+  --widget-color: #ffffff;
+  --widget-mask-color: rgba(0, 0, 0, 0.1);
+  --primary-font: "Roboto"
+}
+
+
+[data-theme="dark"] {
+  --primary-color: #6ce729;
+  --secondary-color: #818cab;
+  --font-primary-color: #ffffff;
+  --font-secondary-color: #000000;
+  --bg-color: #161625;
+  --widget-color: #222239;
+  --widget-mask-color: rgba(255, 255, 255, 0.1);
+  --primary-font: "Roboto"
+}
+
+body {
+  margin: 0;
+  font-family: var(--primary-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--font-primary-color);
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 500;
+  margin: 0;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 500;
+  margin: 0;
+}
+
+h3 {
+  font-size: 50px;
+  font-weight: 500;
+  margin: 0;
+}
+
+h4 {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0;
+}
+
+h5 {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 0;
+}
+
+h6 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

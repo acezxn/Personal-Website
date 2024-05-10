@@ -1,0 +1,21 @@
+canvas {
+    width: 100vw;
+    height: 100vh;
+    image-rendering: pixelated;
+}
+
+.big_button {
+    padding: 12px;
+    border: transparent;
+    border: 1px solid var(--primary-color);
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-size: 20px;
+    font-family: "Roboto";
+    transition: all 0.2s ease-out;
+}
+
+.big_button:hover {
+    background-color: var(--primary-color);
+    color: var(--font-secondary-color);
+}
