@@ -7,10 +7,12 @@ export const ThemeSwitch = () => {
     const toggleTheme = () => {
         if (theme === "light") {
             localStorage.setItem("theme", "dark");
+            setTheme("dark");
         } else {
             localStorage.setItem("theme", "light");
+            setTheme("light");
         }
-        setTheme(theme);
+        
         document.documentElement.setAttribute("data-theme", theme);
         window.dispatchEvent(new Event("storage"));
     }

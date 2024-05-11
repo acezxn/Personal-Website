@@ -20,6 +20,7 @@ function App() {
     useEffect(() => {
         updateTheme();
         window.addEventListener("storage", updateTheme);
+        window.dispatchEvent(new Event("storage"));
     }, []);
 
     return (

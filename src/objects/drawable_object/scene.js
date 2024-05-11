@@ -34,7 +34,6 @@ export default class Scene extends DrawableObject {
     }
     static render(ctx) {
         Scene.update(ctx);
-        console.log(Scene.objects.length);
         for (let obj of Scene.objects) {
             for (let otherObj of Scene.objects) {
                 if (obj === otherObj) {
