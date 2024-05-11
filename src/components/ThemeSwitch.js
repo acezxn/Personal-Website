@@ -34,10 +34,10 @@ export const ThemeSwitch = () => {
         <>
             <button style={{ backgroundColor: "transparent", border: "none" }} onClick={toggleTheme}>
                 {
-                    theme === "dark" ? (
-                        <Moon width={40} height={40} style={{ filter: "invert(1)" }} />
-                    ) : (
+                    theme === "light" ? (
                         <Sun width={40} height={40} />
+                    ) : (
+                        <Moon width={40} height={40} style={{ filter: "invert(1)" }} />
                     )
                 }
             </button>

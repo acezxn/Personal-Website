@@ -18,7 +18,7 @@ export const BasicInfoCard = () => {
 
     useEffect(() => {
         const handleStorage = () => {
-            setMapColor(localStorage.getItem("theme") === "dark" ? [142, 231, 41] : [104, 11, 217]);
+            setMapColor(localStorage.getItem("theme") === "light" ? [104, 11, 217] : [142, 231, 41]);
         };
         window.addEventListener("storage", handleStorage);
     }, []);

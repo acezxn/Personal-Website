@@ -1,16 +1,4 @@
 :root {
-  --primary-color: #680bd9;
-  --secondary-color: #536390;
-  --font-primary-color: #000000;
-  --font-secondary-color: #ffffff;
-  --bg-color: #f6f6ff;
-  --widget-color: #ffffff;
-  --widget-mask-color: rgba(0, 0, 0, 0.1);
-  --primary-font: "Roboto"
-}
-
-
-[data-theme="dark"] {
   --primary-color: #8ee729;
   --secondary-color: #818cab;
   --font-primary-color: #ffffff;
@@ -18,6 +6,18 @@
   --bg-color: #161625;
   --widget-color: #222239;
   --widget-mask-color: rgba(255, 255, 255, 0.1);
+  --primary-font: "Roboto"
+}
+
+
+[data-theme="light"] {
+  --primary-color: #680bd9;
+  --secondary-color: #536390;
+  --font-primary-color: #000000;
+  --font-secondary-color: #ffffff;
+  --bg-color: #f6f6ff;
+  --widget-color: #ffffff;
+  --widget-mask-color: rgba(0, 0, 0, 0.1);
   --primary-font: "Roboto"
 }
 
