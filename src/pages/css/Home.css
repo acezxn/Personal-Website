@@ -10,7 +10,7 @@ canvas {
     border: 1px solid var(--primary-color);
     background-color: var(--bg-color);
     color: var(--primary-color);
-    font-size: 20px;
+    font-size: 25px;
     font-family: "Roboto";
     transition: all 0.2s ease-out;
 }
