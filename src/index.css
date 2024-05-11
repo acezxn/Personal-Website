@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #234af8;
+  --primary-color: #680bd9;
   --secondary-color: #536390;
   --font-primary-color: #000000;
   --font-secondary-color: #ffffff;
@@ -11,7 +11,7 @@
 
 
 [data-theme="dark"] {
-  --primary-color: #6ce729;
+  --primary-color: #8ee729;
   --secondary-color: #818cab;
   --font-primary-color: #ffffff;
   --font-secondary-color: #000000;
@@ -73,6 +73,10 @@ p {
 a {
   text-decoration: none;
   color: inherit
+}
+
+.monospace {
+  font-family: "Fira Mono";
 }
 
 code {

@@ -1,5 +1,9 @@
+import { BasicInfoCard } from "../components/BasicInfoCard"
+
 export const Dashboard = () => {
     return (
-        <h1>Dashboard</h1>
+        <div style={{ margin: 10 }}>
+            <BasicInfoCard />
+        </div>
     )
 }

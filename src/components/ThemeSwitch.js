@@ -20,6 +20,7 @@ export const ThemeSwitch = () => {
             document.documentElement.setAttribute("data-theme", currentTheme);
             setTheme(currentTheme);
         }
+        window.dispatchEvent(new Event("storage"));
     }
     
     useEffect(() => {

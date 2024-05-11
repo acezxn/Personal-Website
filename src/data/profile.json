@@ -1,0 +1,54 @@
+{
+    "basic_information": {
+        "hometown": {
+            "address": "No. 15, Lane 399, Qingshan Road, Xindian Distric, New Taipei City, Taiwan",
+            "timezone": "UTC+8"
+        },
+        "spoken_language": [
+            "English",
+            "Chinese (Mandarin)"
+        ],
+        "coordinate": [
+            24.953753009647542,
+            121.52336787116406
+        ]
+    },
+    "person_description": {},
+    "skills": {
+        "programming_languages": [
+            "C/C++",
+            "Python",
+            "Java",
+            "Javascript",
+            "HTML/CSS",
+            "Bash"
+        ],
+        "technologies": [
+            "Git/Github",
+            "Django",
+            "React.js",
+            "Electron",
+            "Firebase",
+            "PostgreSQL",
+            "Docker",
+            "ROS"
+        ]
+    },
+    "experiences": [
+        {
+            "name": "b01lers Capture The Flag Team",
+            "role": "participant",
+            "description": "Participated in the Capture the flag team as a member in Purdue University, which is currently ranked 7th in national standings."
+        },
+        {
+            "name": "Purdue Robomasters Club",
+            "role": "algorithm team developer",
+            "description": "Participated in the algorithm team of the Purdue Robomasters club, which is responsible for developing computer vision, auto aiming, and auto navigagion pipelines."
+        },
+        {
+            "name": "The Data Mine, Purdue University, West Lafayette, IN",
+            "role": "undergraduate data engineer",
+            "description": "Collaborated with Knudsen Institute on analyzing trends in supply chains on industrial parts procurement in the automotive industry, and trained to use R and Python to perform time series analysis and interact with multiple databases."
+        }
+    ]
+}
