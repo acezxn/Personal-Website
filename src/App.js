@@ -1,24 +1,36 @@
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
+    BrowserRouter as Router,
+    Routes,
+    Route,
 } from "react-router-dom";
 import { ResumePage } from "./pages/ResumePage";
 import { Dashboard } from "./pages/Dashboard";
 import { Home } from "./pages/Home";
-import { Navbar } from "./components/Navbar";
+import { useEffect } from "react";
 
 function App() {
-  return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/dashboard" element={<Dashboard />}></Route>
-        <Route path="/resume" element={<ResumePage />}></Route>
-      </Routes>
-    </Router>
-  );
+    const updateTheme = () => {
+        const currentTheme = localStorage.getItem("theme");
+
+        if (currentTheme) {
+            document.documentElement.setAttribute("data-theme", currentTheme);
+        }
+    }
+
+    useEffect(() => {
+        updateTheme();
+        window.addEventListener("storage", updateTheme);
+    }, []);
+
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />}></Route>
+                <Route path="/dashboard" element={<Dashboard />}></Route>
+                <Route path="/resume" element={<ResumePage />}></Route>
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

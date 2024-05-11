@@ -10,7 +10,9 @@ export const ThemeSwitch = () => {
         } else {
             localStorage.setItem("theme", "light");
         }
-        updateTheme();
+        setTheme(theme);
+        document.documentElement.setAttribute("data-theme", theme);
+        window.dispatchEvent(new Event("storage"));
     }
 
     const updateTheme = () => {
@@ -20,7 +22,6 @@ export const ThemeSwitch = () => {
             document.documentElement.setAttribute("data-theme", currentTheme);
             setTheme(currentTheme);
         }
-        window.dispatchEvent(new Event("storage"));
     }
     
     useEffect(() => {
