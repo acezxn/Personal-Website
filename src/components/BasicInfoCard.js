@@ -24,8 +24,8 @@ export const BasicInfoCard = () => {
         getIcon: () => 'marker',
         getPosition: (d) => d.coordinates,
         getSize: 30,
-        iconAtlas: window.location.origin + "/target.png",
-        iconMapping: window.location.origin + "/target_mapping.json",
+        iconAtlas: window.location.origin + "/assets/images/target.png",
+        iconMapping: window.location.origin + "/assets/images/mappings/target_mapping.json",
         pickable: true
       });
 

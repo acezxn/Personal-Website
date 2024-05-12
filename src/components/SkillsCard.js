@@ -11,7 +11,7 @@ export const SkillsCard = () => {
                 }}>Skills</h6>
             <label className="field_left monospace"><b>Programming Languages:</b></label>
             <br />
-            <label className="field monospace">{profile.skills.technologies.join(", ")}</label>
+            <label className="field monospace">{profile.skills.programming_languages.join(", ")}</label>
             <br />
             <hr />
             <label className="field_left monospace"><b>Technologies:</b></label>

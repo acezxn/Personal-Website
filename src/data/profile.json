@@ -13,6 +13,11 @@
             121.52336787116406
         ]
     },
+    "contact": {
+        "phone": "+1 (765) 413-1391",
+        "email": "acezxn@gmail.com",
+        "github": "github.com/acezxn"
+    },
     "person_description": {
         "whoami": "Welcome! I'm Cheng-En (Daniel) Lee, a tech enthusiast passionate about cybersecurity, frontend/backend development, and robotics. I love crafting meaningful projects that make a positive impact. In my spare time, I love to hack ethically, playing CTFs, and coding for fun.",
         "interests": [
@@ -58,6 +63,49 @@
             "name": "The Data Mine, Purdue University, West Lafayette, IN",
             "role": "undergraduate data engineer",
             "description": "Collaborated with Knudsen Institute on analyzing trends in supply chains on industrial parts procurement in the automotive industry, and trained to use R and Python to perform time series analysis and interact with multiple databases."
+        }
+    ],
+    "projects": [
+        {
+            "name": "OpenTeam",
+            "description": "An online team management tool using React JS, Material UI, and Firebase. Featured functionalities include public and private teaming system, real time task management, and real time communication.",
+            "link": "https://github.com/acezxn/OpenTeam",
+            "images": [
+                "/assets/images/openteam/discussions.png",
+                "/assets/images/openteam/home.png",
+                "/assets/images/openteam/tasks.png"
+            ]
+        },
+        {
+            "name": "Pathtracker Online",
+            "description": "An online robot path following simulator designed for VEX Robotics Competition, allowing developers to design and test autonomous routes virtually to boost the development process.",
+            "link": "https://github.com/acezxn/Pathtracker-online",
+            "images": [
+                "/assets/images/pathtracker_online/pathtracker_online.gif"
+            ]
+        },
+        {
+            "name": "Grouping Optimization",
+            "description": "An web application designed to experiment with group satisfaction optimization algorithms using multiple self-invented algorithms. Featured functionalities include classroom management system and group optimization algorithms.",
+            "link": "https://github.com/acezxn/Grouping-optimization",
+            "images": [
+                "https://user-images.githubusercontent.com/14313049/211586141-5ca58b48-599a-47b7-ad9b-cb8e46b6c474.png",
+                "https://user-images.githubusercontent.com/14313049/211585733-3238b71e-2c72-44cf-a7c0-a92f213c67ef.png"
+            ]
+        },
+        {
+            "name": "JavaCry Ransomware Framework",
+            "description": "A ransomware generation framework built entirely in Java, Featuring target directory encryption, secure management of encryption keys, and persistent reverse shell implant for Windows, Linux, and MacOS.",
+            "link": "https://github.com/acezxn/JavaCry",
+            "images": [
+                "https://github.com/acezxn/JavaCry/raw/main/images/YourFilesHaveBeenEncrypted.png"
+            ]
+        },
+        {
+            "name": "AnyScrape",
+            "description": "A web scraper written in javascript, featuring custom filtering selection of tag name, tag attribute, tag location (with linear expressions implemented), and delay.",
+            "link": "https://github.com/acezxn/AnyScrape",
+            "images": []
         }
     ],
     "grades": {

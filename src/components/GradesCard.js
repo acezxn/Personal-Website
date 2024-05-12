@@ -3,13 +3,13 @@ import profile from "./../data/profile.json";
 
 export const GradesCard = () => {
     return (
-        <div className="info_card">
+        <div style={{height: "20vh"}} className="info_card">
             <h6
                 className="monospace"
                 style={{
                     color: "var(--primary-color)"
                 }}>Grades</h6>
-            <label className="field_left monospace"><b>University:</b></label>
+            <label className="field_left monospace"><b>Purdue University:</b></label>
             <br />
             <br />
             <label className="field_left monospace">GPA:</label>

@@ -5,8 +5,18 @@
     padding: 10px;
     margin-bottom: 10px;
     max-height: 43vh;
+    resize: vertical;
     overflow: scroll;
 }
+
+.link {
+    color: var(--font-primary-color);
+}
+
+.link:hover {
+    color: var(--primary-color);
+}
+
 
 .field {
     font-size: 18px;

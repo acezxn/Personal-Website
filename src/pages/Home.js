@@ -1,10 +1,29 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./css/Home.css"
 import Scene from "../objects/drawable_object/scene";
 
+async function typeSentence(sentence, element, delay) {
+    const letters = sentence.split("");
+    let i = 0;
+    while (i < letters.length) {
+        await waitForMs(delay);
+        element.append(letters[i]);
+        i++;
+    }
+    return;
+}
+
+
+function waitForMs(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms))
+}
+
 export const Home = () => {
+    const [titleTyping, setTitleTyping] = useState(false);
+    const [subtitleTyping, setSubtitleTyping] = useState(false);
+    const titleRef = useRef(null);
+    const subtitleRef = useRef(null);
     var canvasRef = useRef(null);
-    document.documentElement.setAttribute("data-theme", "light");
 
     const getPixelRatio = context => {
         var backingStore =
@@ -19,7 +38,27 @@ export const Home = () => {
         return (window.devicePixelRatio || 1) / backingStore;
     };
 
+    const typeTitles = async () => {
+        if (titleRef.current && !titleTyping) {
+            typeSentence("Cheng-En (Daniel) Lee", titleRef.current, 50)
+            .then(() => {
+                setTitleTyping(false);
+            })
+            setTitleTyping(true);
+        }
+        if (subtitleRef.current && !subtitleTyping) {
+            await waitForMs(1500);
+            typeSentence("Purdue CS '27", subtitleRef.current, 100)
+            .then(() => {
+                setSubtitleTyping(false);
+            })
+            setSubtitleTyping(true);
+        }
+    }
 
+    useEffect(() => {
+        typeTitles();
+    }, []);
 
     useEffect(() => {
         let canvas = canvasRef.current;
@@ -55,7 +94,7 @@ export const Home = () => {
         })
         setInterval(() => {
             Scene.spawnVortexParticle(ctx);
-        }, 50);
+        }, 100);
 
 
         render(ctx);
@@ -69,9 +108,19 @@ export const Home = () => {
             <canvas ref={canvasRef}></canvas>
             <div style={{ position: "absolute", top: "30vh", width: "100vw" }}>
                 <div style={{ textAlign: "center" }}>
-                    <h2>The profile of a </h2>
+                    <div className="typing_container">
+                        <h1 style={{ fontFamily: "Fira Mono" }}><span ref={titleRef} className="sentence"></span></h1>
+                        {
+                            titleTyping && <span className="input_cursor_h1"></span>
+                        }
+                    </div>
                     <br />
-                    <h1>level skip challenger</h1>
+                    <div className="typing_container">
+                        <h2 style={{ fontFamily: "Fira Mono" }}><span ref={subtitleRef} className="sentence"></span></h2>
+                        {
+                            subtitleTyping && <span className="input_cursor_h2"></span>
+                        }
+                    </div>
                     <br />
                     <a href="/dashboard"><input type="button" className="big_button" value="Find out who I am"></input></a>
                 </div>

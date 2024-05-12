@@ -19,3 +19,45 @@ canvas {
     background-color: var(--primary-color);
     color: var(--font-secondary-color);
 }
+
+.typing_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_cursor_h1 {
+    display: inline-block;
+    width: 2px;
+    height: 90px;
+    background-color: var(--font-primary-color);
+    margin-left: 8px;
+    animation: blink .5s ease-out infinite alternate;
+}
+
+.input_cursor_h2 {
+    display: inline-block;
+    width: 2px;
+    height: 60px;
+    background-color: var(--font-primary-color);
+    margin-left: 8px;
+    animation: blink .5s ease-out infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
