@@ -75,6 +75,14 @@ a {
   color: inherit
 }
 
+hr {
+  color: var(--primary-color);
+  border-top: 1px solid;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
 .monospace {
   font-family: "Fira Mono";
 }

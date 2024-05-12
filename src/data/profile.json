@@ -1,7 +1,7 @@
 {
     "basic_information": {
         "hometown": {
-            "address": "No. 15, Lane 399, Qingshan Road, Xindian Distric, New Taipei City, Taiwan",
+            "address": "No. 15, Lane 399, Qingshan Road, Xindian District, New Taipei City, Taiwan",
             "timezone": "UTC+8"
         },
         "spoken_language": [
@@ -13,7 +13,16 @@
             121.52336787116406
         ]
     },
-    "person_description": {},
+    "person_description": {
+        "whoami": "Welcome! I'm Cheng-En (Daniel) Lee, a tech enthusiast passionate about cybersecurity, frontend/backend development, and robotics. I love crafting meaningful projects that make a positive impact. In my spare time, I love to hack ethically, playing CTFs, and coding for fun.",
+        "interests": [
+            "Playing CTF",
+            "Hacking machines",
+            "Frontend/Backend development",
+            "Creative coding",
+            "Robot control system development"
+        ]
+    },
     "skills": {
         "programming_languages": [
             "C/C++",
@@ -50,5 +59,58 @@
             "role": "undergraduate data engineer",
             "description": "Collaborated with Knudsen Institute on analyzing trends in supply chains on industrial parts procurement in the automotive industry, and trained to use R and Python to perform time series analysis and interact with multiple databases."
         }
-    ]
+    ],
+    "grades": {
+        "university": {
+            "gpa": "3.97 / 4.0",
+            "courses": [
+                {
+                    "name": "MA26500",
+                    "grade": "A-"
+                },
+                {
+                    "name": "CS18200",
+                    "grade": "A"
+                },
+                {
+                    "name": "CS24000",
+                    "grade": "A"
+                },
+                {
+                    "name": "CS18000",
+                    "grade": "A"
+                },
+                {
+                    "name": "CS19300",
+                    "grade": "A"
+                },
+                {
+                    "name": "MA26100",
+                    "grade": "A+"
+                }
+            ]
+        },
+        "high_school": {
+            "gpa": "4.3 / 4.8",
+            "sat": 1490,
+            "courses": [
+                {
+                    "name": "AP Calculus BC",
+                    "grade": "5"
+                },
+                {
+                    "name": "AP Physics C Mechanics",
+                    "grade": "5"
+                },
+                {
+                    "name": "AP Physics C E & M",
+                    "grade": "5"
+                },
+                {
+                    "name": "AP Computer Science A",
+                    "grade": "5"
+                }
+            ]
+        }
+    }
 }

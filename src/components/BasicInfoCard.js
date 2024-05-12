@@ -1,6 +1,7 @@
 import "./css/InfoCard.css"
 import profile from "./../data/profile.json";
-import DeckGL, { FlyToInterpolator, GeoJsonLayer, _GlobeView as GlobeView } from 'deck.gl';
+import DeckGL, { GeoJsonLayer, _GlobeView as GlobeView } from 'deck.gl';
+import { IconLayer } from '@deck.gl/layers';
 import { useEffect, useState } from "react";
 
 
@@ -13,8 +14,20 @@ export const BasicInfoCard = () => {
     const initialViewState = {
         longitude: profile.basic_information.coordinate[1],
         latitude: profile.basic_information.coordinate[0],
-        zoom: 1
+        zoom: 1.4
     };
+
+    const iconLayer = new IconLayer({
+        id: 'IconLayer',
+        data: [{"coordinates": [profile.basic_information.coordinate[1], profile.basic_information.coordinate[0]]}],
+        getColor: () => mapColor,
+        getIcon: () => 'marker',
+        getPosition: (d) => d.coordinates,
+        getSize: 30,
+        iconAtlas: window.location.origin + "/target.png",
+        iconMapping: window.location.origin + "/target_mapping.json",
+        pickable: true
+      });
 
     useEffect(() => {
         const handleStorage = () => {
@@ -34,14 +47,17 @@ export const BasicInfoCard = () => {
             <br />
             <label className="field monospace">{profile.basic_information.hometown.address}</label>
             <br />
+            <hr />
             <label className="field_left monospace"><b>Timezone:</b></label>
             <label className="field_right monospace">{profile.basic_information.hometown.timezone}</label>
             <br />
+            <hr />
             <label className="field_left monospace"><b>Spoken Language:</b></label>
             <br />
             <label className="field monospace">{profile.basic_information.spoken_language.join(", ")}</label>
             <br />
-            <DeckGL views={new GlobeView()} style={{ position: "relative", height: 220 }} controller={true} initialViewState={initialViewState}>
+            <hr />
+            <DeckGL views={new GlobeView()} style={{ position: "relative", height: 140 }} controller={true} initialViewState={initialViewState} layers={[iconLayer]}>
                 <GeoJsonLayer
                     id="base-map-stroke"
                     data={dataUrl.countries}
@@ -58,6 +74,7 @@ export const BasicInfoCard = () => {
                     opacity={0.01}
                     getFillColor={mapColor} />
             </DeckGL>
+            <hr />
         </div>
     )
 }
