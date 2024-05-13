@@ -28,7 +28,7 @@ export const ProjectsCard = () => {
                     }
                 })
             }
-            <button className="link monospace" style={{backgroundColor: "transparent", border: "none", textAlign: "center", fontSize: 20}}>+ More</button>
+            <a className="link monospace" href={`https://${profile.contact.github}`} style={{fontSize: 20}}>+ More</a>
         </div>
     )
 }

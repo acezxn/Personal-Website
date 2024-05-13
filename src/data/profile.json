@@ -14,8 +14,9 @@
         ]
     },
     "contact": {
-        "phone": "+1 (765) 413-1391",
-        "email": "acezxn@gmail.com",
+        "phone_display": "+1 (765) 413-1391",
+        "phone": "+17654131391",
+        "email": "lee4649@purdue.edu",
         "github": "github.com/acezxn"
     },
     "person_description": {
@@ -51,17 +52,22 @@
     "experiences": [
         {
             "name": "b01lers Capture The Flag Team",
-            "role": "participant",
+            "role": "Participant",
             "description": "Participated in the Capture the flag team as a member in Purdue University, which is currently ranked 7th in national standings."
         },
         {
             "name": "Purdue Robomasters Club",
-            "role": "algorithm team developer",
+            "role": "Algorithm team developer",
             "description": "Participated in the algorithm team of the Purdue Robomasters club, which is responsible for developing computer vision, auto aiming, and auto navigagion pipelines."
         },
         {
+            "name": "EC-Council Certified Ethical Hacker (CEH) Certification",
+            "role": "Participant",
+            "description": "Participated in EC-Council's CEH training program, and passed the certification exam."
+        },
+        {
             "name": "The Data Mine, Purdue University, West Lafayette, IN",
-            "role": "undergraduate data engineer",
+            "role": "Undergraduate data engineer",
             "description": "Collaborated with Knudsen Institute on analyzing trends in supply chains on industrial parts procurement in the automotive industry, and trained to use R and Python to perform time series analysis and interact with multiple databases."
         }
     ],

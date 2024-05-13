@@ -1,5 +1,11 @@
+import { Navbar } from "../components/Navbar"
+import "./css/ResumePage.css"
+
 export const ResumePage = () => {
     return (
-        <h1>Resume</h1>
+        <>
+            <Navbar />
+            <iframe className="resume_display" src={`${window.location.origin}/assets/pdfs/Daniel_s_Resume_general.pdf`} />
+        </>
     )
 }

@@ -41,17 +41,17 @@ export const Home = () => {
     const typeTitles = async () => {
         if (titleRef.current && !titleTyping) {
             typeSentence("Cheng-En (Daniel) Lee", titleRef.current, 50)
-            .then(() => {
-                setTitleTyping(false);
-            })
+                .then(() => {
+                    setTitleTyping(false);
+                })
             setTitleTyping(true);
         }
         if (subtitleRef.current && !subtitleTyping) {
             await waitForMs(1500);
             typeSentence("Purdue CS '27", subtitleRef.current, 100)
-            .then(() => {
-                setSubtitleTyping(false);
-            })
+                .then(() => {
+                    setSubtitleTyping(false);
+                })
             setSubtitleTyping(true);
         }
     }
@@ -108,21 +108,23 @@ export const Home = () => {
             <canvas ref={canvasRef}></canvas>
             <div style={{ position: "absolute", top: "30vh", width: "100vw" }}>
                 <div style={{ textAlign: "center" }}>
-                    <div className="typing_container">
+                    <div className="typing_container" style={{ height: 100 }}>
                         <h1 style={{ fontFamily: "Fira Mono" }}><span ref={titleRef} className="sentence"></span></h1>
                         {
                             titleTyping && <span className="input_cursor_h1"></span>
                         }
                     </div>
                     <br />
-                    <div className="typing_container">
-                        <h2 style={{ fontFamily: "Fira Mono" }}><span ref={subtitleRef} className="sentence"></span></h2>
+                    <div className="typing_container" style={{ height: 70 }}>
+                        <h2 style={{ fontFamily: "Fira Mono", color: "var(--secondary-color)" }}><span ref={subtitleRef} className="sentence"></span></h2>
                         {
                             subtitleTyping && <span className="input_cursor_h2"></span>
                         }
                     </div>
                     <br />
-                    <a href="/dashboard"><input type="button" className="big_button" value="Find out who I am"></input></a>
+                    <a href="/dashboard">
+                        <input type="button" className="big_button" value="Find out who I am"></input>
+                    </a>
                 </div>
             </div>
         </>
