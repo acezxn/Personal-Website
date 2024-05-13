@@ -70,10 +70,6 @@ export const Home = () => {
         let height = getComputedStyle(canvas)
             .getPropertyValue('height')
             .slice(0, -2);
-        canvas.width = width * ratio;
-        canvas.height = height * ratio;
-        canvas.style.width = `${width}px`;
-        canvas.style.height = `${height}px`;
         let requestId;
 
         const draw = (ctx) => {

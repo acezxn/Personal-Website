@@ -3,7 +3,7 @@ import profile from "./../data/profile.json";
 
 export const GradesCard = () => {
     return (
-        <div style={{height: "20vh"}} className="info_card">
+        <div className="info_card" style={{ height: 200 }}>
             <h6
                 className="monospace"
                 style={{

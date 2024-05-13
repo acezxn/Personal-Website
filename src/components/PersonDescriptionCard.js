@@ -19,6 +19,11 @@ export const PersonDescriptionCard = () => {
             <label className="field monospace">{profile.person_description.interests.join(", ")}</label>
             <br />
             <hr />
+            <label className="field_left monospace"><b>Characteristics:</b></label>
+            <br />
+            <label className="field monospace">{profile.person_description.characteristic.join(", ")}</label>
+            <br />
+            <hr />
         </div>
     )
 }
