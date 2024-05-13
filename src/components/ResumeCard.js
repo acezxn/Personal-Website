@@ -20,11 +20,10 @@ export const ResumeCard = () => {
             <br />
             <label className="field_left monospace">1 document found</label>
             <br />
-            <br />
             <a href="/resume">
                 <div>
-                    <FaFile style={{ verticalAlign: "middle" }} color={color} size={40} />
-                    <label className="link monospace" style={{ verticalAlign: "middle", display: "inline" }}>{`${document.location.origin}/resume`}</label>
+                    <FaFile style={{ verticalAlign: "middle", margin: 10, marginLeft: 0 }} color={color} size={40} />
+                    <label className="link monospace" style={{ verticalAlign: "middle", display: "inline-block" }}>resume.pdf</label>
                 </div>
             </a>
         </div>
