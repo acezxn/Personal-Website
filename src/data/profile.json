@@ -75,7 +75,7 @@
         {
             "name": "The Data Mine, Purdue University, West Lafayette, IN",
             "role": "Undergraduate data engineer",
-            "description": "Collaborated with Knudsen Institute on analyzing trends in supply chains on industrial parts procurement in the automotive industry, and trained to use R and Python to perform time series analysis and interact with multiple databases."
+            "description": "Collaborated with Knudsen Institute on analyzing trends in supply chains on industrial parts procurement in the automotive industry, and trained to use R and Python to perform time series analysis, dynamic time warping, and ARIMA modeling, as well as interact with multiple databases."
         }
     ],
     "projects": [
@@ -86,7 +86,9 @@
             "images": [
                 "/assets/images/openteam/discussions.png",
                 "/assets/images/openteam/home.png",
-                "/assets/images/openteam/tasks.png"
+                "/assets/images/openteam/tasks.png",
+                "/assets/images/openteam/chat.png",
+                "/assets/images/openteam/stats.png"
             ]
         },
         {
@@ -95,6 +97,15 @@
             "link": "https://github.com/acezxn/Pathtracker-online",
             "images": [
                 "/assets/images/pathtracker_online/pathtracker_online.gif"
+            ]
+        },
+        {
+            "name": "AnyScrape",
+            "description": "A web scraper written in javascript, featuring custom filtering selection of tag name, tag attribute, tag location (with linear expressions implemented), and delay.",
+            "link": "https://github.com/acezxn/AnyScrape",
+            "images": [
+                "/assets/images/anyscrape/reader.png",
+                "/assets/images/anyscrape/scrape_result.png"
             ]
         },
         {
@@ -113,12 +124,6 @@
             "images": [
                 "https://github.com/acezxn/JavaCry/raw/main/images/YourFilesHaveBeenEncrypted.png"
             ]
-        },
-        {
-            "name": "AnyScrape",
-            "description": "A web scraper written in javascript, featuring custom filtering selection of tag name, tag attribute, tag location (with linear expressions implemented), and delay.",
-            "link": "https://github.com/acezxn/AnyScrape",
-            "images": []
         }
     ],
     "grades": {

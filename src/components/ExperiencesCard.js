@@ -16,9 +16,11 @@ export const ExperiencesCard = () => {
                         <br />
                         <label className="field monospace">{experience.name}</label>
                         <br />
+                        <br />
                         <label className="field_left monospace"><b>Role:</b></label>
                         <br />
                         <label className="field monospace">{experience.role}</label>
+                        <br />
                         <br />
                         <label className="field_left monospace"><b>Description:</b></label>
                         <br />

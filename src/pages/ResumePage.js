@@ -5,7 +5,7 @@ export const ResumePage = () => {
     return (
         <>
             <Navbar />
-            <iframe className="resume_display" src={`${window.location.origin}/assets/pdfs/Daniel_s_Resume_general.pdf`} />
+            <iframe title="resume" className="resume_display" src={`${window.location.origin}/assets/pdfs/Daniel_s_Resume_general.pdf`} />
         </>
     )
 }

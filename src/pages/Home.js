@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import "./css/Home.css"
 import Scene from "../objects/drawable_object/scene";
+import { Navbar } from "../components/Navbar";
 
 async function typeSentence(sentence, element, delay) {
     const letters = sentence.split("");
@@ -105,6 +106,7 @@ export const Home = () => {
 
     return (
         <>
+            <Navbar />
             <canvas ref={canvasRef}></canvas>
             <div style={{ position: "absolute", top: "30vh", width: "100vw" }}>
                 <div style={{ textAlign: "center" }}>

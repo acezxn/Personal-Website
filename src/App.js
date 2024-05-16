@@ -8,6 +8,7 @@ import { Dashboard } from "./pages/Dashboard";
 import { Home } from "./pages/Home";
 import { useEffect } from "react";
 import { NotFound } from "./pages/NotFound";
+import { ProjectsPage } from "./pages/ProjectsPage";
 
 function App() {
     const updateTheme = () => {
@@ -30,6 +31,7 @@ function App() {
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/dashboard" element={<Dashboard />}></Route>
                 <Route path="/resume" element={<ResumePage />}></Route>
+                <Route path="/projects" element={<ProjectsPage />}></Route>
                 <Route path="/*" element={<NotFound />}></Route>
             </Routes>
         </Router>

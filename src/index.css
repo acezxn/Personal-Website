@@ -3,6 +3,7 @@
   --secondary-color: #909cbf;
   --font-primary-color: #ffffff;
   --font-secondary-color: #000000;
+  --error-color: #cc3c3c;
   --bg-color: #161625;
   --widget-color: #222239;
   --widget-mask-color: rgba(255, 255, 255, 0.1);
@@ -15,6 +16,7 @@
   --secondary-color: #b977c2;
   --font-primary-color: #000000;
   --font-secondary-color: #ffffff;
+  --error-color: #cc3c3c;
   --bg-color: #f6f6ff;
   --widget-color: #ffffff;
   --widget-mask-color: rgba(0, 0, 0, 0.1);
@@ -65,6 +67,83 @@ h6 {
   font-weight: 500;
   margin: 0;
 }
+
+@media all and (min-width: 800px) and (max-width: 1200px) {
+  h1 {
+    font-size: 70px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  h2 {
+    font-size: 55px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  h3 {
+    font-size: 45px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  h4 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  h5 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  h6 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 800px) {
+  h1 {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  h4 {
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  h5 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  h6 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
 
 p {
   font-size: 20px;
