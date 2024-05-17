@@ -110,7 +110,7 @@
         },
         {
             "name": "Grouping Optimization",
-            "description": "An web application designed to experiment with group satisfaction optimization algorithms using multiple self-invented algorithms. Featured functionalities include classroom management system and group optimization algorithms.",
+            "description": "An web application designed to experiment with group satisfaction optimization algorithms using multiple self-invented algorithms. Featured functionalities including classroom management system and group optimization algorithms.",
             "link": "https://github.com/acezxn/Grouping-optimization",
             "images": [
                 "https://user-images.githubusercontent.com/14313049/211586141-5ca58b48-599a-47b7-ad9b-cb8e46b6c474.png",

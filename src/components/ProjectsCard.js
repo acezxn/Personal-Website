@@ -20,7 +20,7 @@ export const ProjectsCard = () => {
                 className="monospace"
                 style={{
                     color: "var(--primary-color)"
-                }}>Projects</h6>
+                }}>Featured Projects</h6>
             {
                 profile.projects.map((project, index) => {
                     if (index < maxPreviewProjects) {
@@ -43,7 +43,7 @@ export const ProjectsCard = () => {
             <a className="link monospace" href="/projects" style={{ fontSize: 20 }}>More Photos</a>
             <br />
             <FaGithub style={{ verticalAlign: "middle", margin: 10, marginLeft: 0 }} color={color} size={20} />
-            <a className="link monospace" href="/projects" style={{ fontSize: 20 }}>Visit Github</a>
+            <a className="link monospace" href={`https://${profile.contact.github}`} style={{ fontSize: 20 }}>Visit Github</a>
             <hr />
         </div>
     )
