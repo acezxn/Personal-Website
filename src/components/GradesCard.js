@@ -16,16 +16,23 @@ export const GradesCard = () => {
             <label className="field_right monospace">{profile.grades.university.gpa}</label>
             <hr />
             <br />
-            {
-                profile.grades.university.courses.map((course) => (
-                    <>
-                        <label className="field_left monospace">{course.name}</label>
-                        <label className="field_right monospace">{course.grade}</label>
-                        <br />
-                        <hr />
-                    </>
-                ))
-            }
+            <table className="monospace">
+                <tr>
+                    <th>Name</th>
+                    <th>Semester</th>
+                    <th>Grade</th>
+                </tr>
+                {
+                    profile.grades.university.courses.map((course) => (
+                        <tr>
+
+                            <td>{course.name}</td>
+                            <td>{course.semester}</td>
+                            <td>{course.grade}</td>
+                        </tr>
+                    ))
+                }
+            </table>
             <br />
             <label className="field_left monospace"><b>High School:</b></label>
             <br />
@@ -37,16 +44,21 @@ export const GradesCard = () => {
             <label className="field_right monospace">{profile.grades.high_school.sat}</label>
             <hr />
             <br />
-            {
-                profile.grades.high_school.courses.map((course) => (
-                    <>
-                        <label className="field_left monospace">{course.name}</label>
-                        <label className="field_right monospace">{course.grade}</label>
-                        <br />
-                        <hr />
-                    </>
-                ))
-            }
+            <table className="monospace">
+                <tr>
+                    <th>Name</th>
+                    <th>Grade</th>
+                </tr>
+                {
+                    profile.grades.high_school.courses.map((course) => (
+                        <tr>
+
+                            <td>{course.name}</td>
+                            <td>{course.grade}</td>
+                        </tr>
+                    ))
+                }
+            </table>
         </div>
     )
 }

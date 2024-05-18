@@ -5,7 +5,7 @@ export default class Scene extends DrawableObject {
     static objects = [];
     static mousePosition = { x: 0, y: 0 };
     static lastUpdate = performance.now();
-    static connectDistance = 150;
+    static connectDistance = 180;
     static fadeDistance = 80;
     static spawnVortexParticle(ctx) {
         this.objects.push(new VortexParticle(

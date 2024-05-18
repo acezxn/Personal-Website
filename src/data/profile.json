@@ -132,26 +132,32 @@
             "courses": [
                 {
                     "name": "MA26500",
+                    "semester": "Spring 2024",
                     "grade": "A-"
                 },
                 {
                     "name": "CS18200",
+                    "semester": "Spring 2024",
                     "grade": "A"
                 },
                 {
                     "name": "CS24000",
+                    "semester": "Spring 2024",
                     "grade": "A"
                 },
                 {
                     "name": "CS18000",
+                    "semester": "Fall 2023",
                     "grade": "A"
                 },
                 {
                     "name": "CS19300",
+                    "semester": "Fall 2023",
                     "grade": "A"
                 },
                 {
                     "name": "MA26100",
+                    "semester": "Fall 2023",
                     "grade": "A+"
                 }
             ]

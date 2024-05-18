@@ -13,7 +13,7 @@ export default class VortexParticle extends DrawableObject {
         if (lifetime) this.#lifetime = lifetime;
         this.#timeCreated = performance.now();
         this.#orbitRadius = Math.random() * 100;
-        this.#maxConnections = Math.ceil(Math.random() * 2);
+        this.#maxConnections = Math.ceil(Math.random() * 3);
     }
 
     getPosition() {
