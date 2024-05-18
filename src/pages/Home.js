@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import "./css/Home.css"
 import Scene from "../objects/drawable_object/scene";
 import { Navbar } from "../components/Navbar";
+import "./css/Home.css"
+
+
 
 async function typeSentence(sentence, element, delay) {
     const letters = sentence.split("");
