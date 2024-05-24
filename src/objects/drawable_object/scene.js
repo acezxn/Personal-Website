@@ -20,13 +20,14 @@ export default class Scene extends DrawableObject {
     }
     static update(ctx) {
         const rect = ctx.canvas.getBoundingClientRect();
+        console.log(this.mousePosition.x - rect.left);
         for (let index = 0; index < Scene.objects.length; index++) {
             let obj = Scene.objects[index];
             if (obj instanceof VortexParticle) {
                 if (performance.now() - obj.getTimeCreated() > obj.getLifetime()) {
                     Scene.objects.splice(index, 1);
                 } else {
-                    obj.update(rect, this.mousePosition, performance.now() - this.lastUpdate);
+                    obj.update(ctx, this.mousePosition, performance.now() - this.lastUpdate);
                 }
             }
         }

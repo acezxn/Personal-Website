@@ -40,9 +40,10 @@ export default class VortexParticle extends DrawableObject {
         return this.#maxConnections;
     }
 
-    update(rect, mousePosition, deltaTime) {
-        let xDiff = mousePosition.x - rect.left - this.#position.x;
-        let yDiff = mousePosition.y - rect.top - this.#position.y;
+    update(ctx, mousePosition, deltaTime) {
+        const rect = ctx.canvas.getBoundingClientRect();
+        let xDiff = (mousePosition.x - rect.left) / ctx.canvas.clientWidth * ctx.canvas.width - this.#position.x;
+        let yDiff = (mousePosition.y - rect.top) / ctx.canvas.clientHeight * ctx.canvas.height - this.#position.y;
         let distance = Math.sqrt(xDiff ** 2 + yDiff ** 2);
         let xDiffNorm = xDiff / distance;
         let yDiffNorm = yDiff / distance;
