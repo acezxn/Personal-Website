@@ -7,6 +7,7 @@
   --bg-color: #161625;
   --widget-color: #222239;
   --widget-mask-color: rgba(255, 255, 255, 0.1);
+  --number-color: rgb(75, 255, 174);
   --primary-font: "Roboto"
 }
 
@@ -14,11 +15,12 @@
 [data-theme="light"] {
   --primary-color: #680bd9;
   --secondary-color: #b977c2;
-  --font-primary-color: #000000;
+  --font-primary-color: #020031;
   --font-secondary-color: #ffffff;
   --error-color: #cc3c3c;
   --bg-color: #f6f6ff;
   --widget-color: #ffffff;
+  --number-color: rgb(167, 0, 182);
   --widget-mask-color: rgba(0, 0, 0, 0.1);
   --primary-font: "Roboto"
 }
@@ -30,6 +32,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-color);
   color: var(--font-primary-color);
+  transition: all 0.2s ease-out;
 }
 
 h1 {
@@ -189,6 +192,14 @@ td {
 
 .monospace {
   font-family: "Fira Mono";
+}
+
+.number {
+  color: var(--number-color);
+}
+
+img {
+  border-radius: 4px;
 }
 
 code {
