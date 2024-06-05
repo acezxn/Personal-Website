@@ -12,7 +12,7 @@ export const ProjectsPage = () => {
                         display: "inline-block",
                         color: "var(--primary-color)"
                     }}>Projects Gallery</h3>
-                <h6 className="monospace" style={{ display: "inline-block", paddingLeft: 40 }}>
+                <h6 className="monospace link" style={{ display: "inline-block", paddingLeft: 40 }}>
                     <a href={`https://${profile.contact.github}`}>[From Github]</a>
                 </h6>
                 <hr />
@@ -24,7 +24,7 @@ export const ProjectsPage = () => {
                                 {
                                     project.images.map((image, idx) => (
                                         <a href={image}>
-                                            <img src={image} key={idx} style={{ height: "30vh", minHeight: 200, paddingTop: 5 }} />
+                                            <img alt="project" src={image} key={idx} style={{ height: "30vh", minHeight: 200, padding: 5, paddingLeft: 0 }} />
                                         </a>
                                     ))
                                 }

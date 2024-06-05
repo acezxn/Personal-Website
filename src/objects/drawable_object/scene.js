@@ -19,7 +19,6 @@ export default class Scene extends DrawableObject {
         ));
     }
     static update(ctx) {
-        const rect = ctx.canvas.getBoundingClientRect();
         for (let index = 0; index < Scene.objects.length; index++) {
             let obj = Scene.objects[index];
             if (obj instanceof VortexParticle) {
