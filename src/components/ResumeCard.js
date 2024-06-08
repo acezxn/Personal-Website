@@ -9,6 +9,7 @@ export const ResumeCard = () => {
             setColor(localStorage.getItem("theme") === "light" ? "#680bd9" : "#8ee729");
         }
         window.addEventListener("storage", handleStorage);
+        handleStorage();
     }, []);
     return (
         <div className="info_card">

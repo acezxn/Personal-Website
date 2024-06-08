@@ -34,6 +34,7 @@ export const BasicInfoCard = () => {
             setMapColor(localStorage.getItem("theme") === "light" ? [104, 11, 217] : [142, 231, 41]);
         };
         window.addEventListener("storage", handleStorage);
+        handleStorage();
     }, []);
 
     return (
