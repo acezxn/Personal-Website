@@ -48,13 +48,13 @@ export default class Scene extends DrawableObject {
                 if (distance < Scene.connectDistance) {
                     if (localStorage.getItem("theme") === "light") {
                         if (distance > Scene.connectDistance - Scene.fadeDistance) {
-                            ctx.strokeStyle = `rgba(104, 11, 217, ${(distance - Scene.connectDistance + Scene.fadeDistance) / Scene.fadeDistance})`
+                            ctx.strokeStyle = `rgba(104, 11, 217, ${1 - (distance - Scene.connectDistance + Scene.fadeDistance) / Scene.fadeDistance})`
                         } else {
                             ctx.strokeStyle = "rgba(104, 11, 217, 1)"
                         }
                     } else {
                         if (distance > Scene.connectDistance - Scene.fadeDistance) {
-                            ctx.strokeStyle = `rgba(108, 231, 41, ${(distance - Scene.connectDistance + Scene.fadeDistance) / Scene.fadeDistance})`
+                            ctx.strokeStyle = `rgba(108, 231, 41, ${1 - (distance - Scene.connectDistance + Scene.fadeDistance) / Scene.fadeDistance})`
                         } else {
                             ctx.strokeStyle = "rgba(108, 231, 41, 1)"
                         }
