@@ -9,6 +9,7 @@
         var(--fiber-color-five) 50%, transparent 50%, transparent 75%,
         var(--fiber-color-six) 75%, var(--fiber-color-six));
     background-size: 20px 20px;
+    min-height: 100vh;
 }
 
 .dashboard {
