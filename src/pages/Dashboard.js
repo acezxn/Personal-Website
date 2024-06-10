@@ -22,7 +22,7 @@ export const Dashboard = () => {
     }, []);
 
     return (
-        <>
+        <div className="fiber_bg">
             <Navbar />
             <div className="dashboard">
                 {
@@ -81,6 +81,6 @@ export const Dashboard = () => {
                     )
                 }
             </div>
-        </>
+        </div>
     )
 }

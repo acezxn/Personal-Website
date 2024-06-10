@@ -26,10 +26,10 @@ export const ProjectsCard = () => {
                     if (index < maxPreviewProjects) {
                         return (
                             <>
-                                <label className="field_left monospace link"><a href={project.link}><b>{project.name}</b></a></label>
+                                <label className="field_left monospace link" style={{ fontSize: 18 }}><a href={project.link}><b>{project.name}</b></a></label>
                                 <br />
                                 <img src={project.images[0]} style={{ width: "100%", paddingTop: 5 }} />
-                                <label className="field monospace">{project.description}</label>
+                                <label className="monospace">{project.description}</label>
                                 <br />
                                 <hr />
                             </>
@@ -39,11 +39,11 @@ export const ProjectsCard = () => {
                     }
                 })
             }
-            <FaRegImages style={{ verticalAlign: "middle", margin: 10, marginLeft: 0 }} color={color} size={20} />
-            <a className="link monospace" href="/projects" style={{ fontSize: 20 }}>More Photos</a>
+            <FaRegImages style={{ verticalAlign: "middle", margin: 5, marginLeft: 0 }} color={color} size={20} />
+            <a className="link monospace" href="/projects" style={{ fontSize: 14 }}>More Photos</a>
             <br />
-            <FaGithub style={{ verticalAlign: "middle", margin: 10, marginLeft: 0 }} color={color} size={20} />
-            <a className="link monospace" href={`https://${profile.contact.github}`} style={{ fontSize: 20 }}>Visit Github</a>
+            <FaGithub style={{ verticalAlign: "middle", margin: 5, marginLeft: 0 }} color={color} size={20} />
+            <a className="link monospace" href={`https://${profile.contact.github}`} style={{ fontSize: 14 }}>Visit Github</a>
             <hr />
         </div>
     )

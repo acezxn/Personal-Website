@@ -97,7 +97,7 @@ export const Home = () => {
         })
         setInterval(() => {
             Scene.spawnVortexParticle(ctx);
-        }, 100);
+        }, 80);
 
 
         render(ctx);

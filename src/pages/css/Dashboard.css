@@ -1,3 +1,16 @@
+.fiber_bg {
+    background:
+        linear-gradient(27deg, var(--fiber-color-one) 5px, transparent 5px) 0 5px,
+        linear-gradient(207deg, var(--fiber-color-one) 5px, transparent 5px) 10px 0px,
+        linear-gradient(27deg, var(--fiber-color-two) 5px, transparent 5px) 0px 10px,
+        linear-gradient(207deg, var(--fiber-color-one) 5px, transparent 5px) 10px 5px,
+        linear-gradient(90deg, var(--fiber-color-three) 10px, transparent 10px),
+        linear-gradient(var(--fiber-color-four) 25%, var(--fiber-color-five) 25%,
+        var(--fiber-color-five) 50%, transparent 50%, transparent 75%,
+        var(--fiber-color-six) 75%, var(--fiber-color-six)) !important;
+    background-size: 20px 20px !important;
+}
+
 .dashboard {
     margin: 10px;
     display: grid;

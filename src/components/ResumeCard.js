@@ -22,7 +22,7 @@ export const ResumeCard = () => {
             <br />
             <a href="/resume">
                 <div>
-                    <FaFile style={{ verticalAlign: "middle", margin: 10, marginLeft: 0 }} color={color} size={40} />
+                    <FaFile style={{ verticalAlign: "middle", margin: 10, marginLeft: 0 }} color={color} size={35} />
                     <label className="link monospace" style={{ verticalAlign: "middle", display: "inline-block" }}>resume.pdf</label>
                 </div>
             </a>

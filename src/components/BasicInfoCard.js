@@ -46,7 +46,7 @@ export const BasicInfoCard = () => {
                 }}>Basic Information</h6>
             <label className="field_left monospace"><b>Hometown:</b></label>
             <br />
-            <label className="field monospace">{profile.basic_information.hometown.address}</label>
+            <label className="monospace">{profile.basic_information.hometown.address}</label>
             <br />
             <hr />
             <label className="field_left monospace"><b>Timezone:</b></label>
@@ -55,7 +55,7 @@ export const BasicInfoCard = () => {
             <hr />
             <label className="field_left monospace"><b>Spoken Language:</b></label>
             <br />
-            <label className="field monospace">{profile.basic_information.spoken_language.join(", ")}</label>
+            <label className="monospace">{profile.basic_information.spoken_language.join(", ")}</label>
             <br />
             <hr />
             <label className="field_left monospace"><b>Current Location:</b></label>

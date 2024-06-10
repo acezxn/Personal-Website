@@ -11,17 +11,17 @@ export const PersonDescriptionCard = () => {
                 }}>Person Description</h6>
             <label className="field_left monospace"><b>Whoami:</b></label>
             <br />
-            <label className="field monospace">{profile.person_description.whoami}</label>
+            <label className="monospace">{profile.person_description.whoami}</label>
             <br />
             <hr />
             <label className="field_left monospace"><b>Interests:</b></label>
             <br />
-            <label className="field monospace">{profile.person_description.interests.join(", ")}</label>
+            <label className="monospace">{profile.person_description.interests.join(", ")}</label>
             <br />
             <hr />
             <label className="field_left monospace"><b>Characteristics:</b></label>
             <br />
-            <label className="field monospace">{profile.person_description.characteristic.join(", ")}</label>
+            <label className="monospace">{profile.person_description.characteristic.join(", ")}</label>
             <br />
             <hr />
         </div>
