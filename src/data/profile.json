@@ -41,11 +41,13 @@
     },
     "skills": {
         "programming_languages": [
-            "C/C++",
+            "C",
+            "C++",
             "Python",
             "Java",
             "Javascript",
-            "HTML/CSS",
+            "HTML",
+            "CSS",
             "Bash"
         ],
         "technologies": [
@@ -55,6 +57,7 @@
             "Electron",
             "Firebase",
             "PostgreSQL",
+            "Redis",
             "Docker",
             "ROS"
         ]

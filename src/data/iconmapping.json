@@ -1,0 +1,20 @@
+{
+    "C": "devicon-c-plain colored",
+    "C++": "devicon-cplusplus-plain colored",
+    "Bash": "devicon-bash-plain",
+    "Python": "devicon-python-plain colored",
+    "Java": "devicon-java-plain colored",
+    "Javascript": "devicon-javascript-plain colored",
+    "HTML": "devicon-html5-plain colored",
+    "CSS": "devicon-css3-plain colored",
+
+    "Git/Github": "devicon-git-plain colored",
+    "Django": "devicon-django-plain",
+    "React.js": "devicon-react-original colored",
+    "Electron": "devicon-electron-original colored",
+    "Firebase": "devicon-firebase-plain colored",
+    "PostgreSQL": "devicon-postgresql-plain colored",
+    "Redis": "devicon-redis-plain colored",
+    "Docker": "devicon-docker-plain colored",
+    "ROS": "devicon-ros-original"
+}
