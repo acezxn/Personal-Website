@@ -66,20 +66,16 @@ export const Home = () => {
     useEffect(() => {
         let canvas = canvasRef.current;
         let ctx = canvas.getContext('2d');
-        let ratio = getPixelRatio(ctx);
-        let width = getComputedStyle(canvas)
-            .getPropertyValue('width')
-            .slice(0, -2);
-        let height = getComputedStyle(canvas)
-            .getPropertyValue('height')
-            .slice(0, -2);
+        let requestId;
+
+        const draw = (ctx) => {
+            let ratio = getPixelRatio(ctx);
+        let width = window.innerWidth;
+        let height = window.innerHeight;
         canvas.width = width * ratio;
         canvas.height = height * ratio;
         canvas.style.width = `${width}px`;
         canvas.style.height = `${height}px`;
-        let requestId;
-
-        const draw = (ctx) => {
             ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
             Scene.render(ctx);
         }

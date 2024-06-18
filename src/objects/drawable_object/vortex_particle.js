@@ -2,6 +2,7 @@ import DrawableObject from "./drawable_object";
 
 export default class VortexParticle extends DrawableObject {
     #position = {x: 0, y: 0};
+    #size = 3;
     #lifetime = 1000;
     #timeCreated = 0;
     #connections = 0;
@@ -11,6 +12,7 @@ export default class VortexParticle extends DrawableObject {
         super();
         if (position) this.#position = position;
         if (lifetime) this.#lifetime = lifetime;
+        this.#size = 3 + Math.random();
         this.#timeCreated = performance.now();
         this.#orbitRadius = Math.random() * 100;
         this.#maxConnections = Math.ceil(Math.random() * 3);
@@ -63,7 +65,7 @@ export default class VortexParticle extends DrawableObject {
             ctx.fillStyle = localStorage.getItem("theme") === "light" ? "#680bd9" : "#6ce729"
         }
         ctx.beginPath();
-        ctx.arc(this.#position.x, this.#position.y, 3, 0, 2 * Math.PI);
+        ctx.arc(this.#position.x, this.#position.y, this.#size, 0, 2 * Math.PI);
         ctx.fill();
     }
 }
