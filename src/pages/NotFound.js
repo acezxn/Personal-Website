@@ -1,8 +1,11 @@
 import { Navbar } from "../components/Navbar"
+import { Helmet } from 'react-helmet';
+
 
 export const NotFound = () => {
     return (
         <>
+            <Helmet><title>Not found</title></Helmet>
             <Navbar />
             <div style={{ height: "calc(40vh - 80px)" }}></div>
             <p style={{ textAlign: "center" }}>

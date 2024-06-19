@@ -1,9 +1,12 @@
 import { Navbar } from "../components/Navbar"
+import { Helmet } from 'react-helmet';
+
 import profile from "./../data/profile.json";
 
 export const ProjectsPage = () => {
     return (
         <>
+            <Helmet><title>Projects</title></Helmet>
             <Navbar />
             <div style={{ margin: 10 }}>
                 <h3

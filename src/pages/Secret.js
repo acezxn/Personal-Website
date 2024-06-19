@@ -1,8 +1,10 @@
 import { Navbar } from "../components/Navbar"
+import { Helmet } from 'react-helmet';
 
 export const Secret = () => {
     return (
         <>
+            <Helmet><title>^_^</title></Helmet>
             <Navbar />
             <div style={{ height: "calc(40vh - 80px)" }}></div>
             <p style={{ textAlign: "center" }}>
