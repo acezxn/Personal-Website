@@ -31,12 +31,15 @@
             "Creative coding",
             "Robot control system development"
         ],
+        "mbti": {
+            "name": "INTJ-T",
+            "url": "https://www.16personalities.com/profiles/intj-t/m/mc5mdn5kn"
+        },
         "characteristic": [
             "Creative",
             "Ethical",
             "Persistent",
-            "Competitive",
-            "Sustainable development"
+            "Competitive"
         ]
     },
     "skills": {

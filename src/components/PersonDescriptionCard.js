@@ -19,6 +19,15 @@ export const PersonDescriptionCard = () => {
             <label className="monospace">{profile.person_description.interests.join(", ")}</label>
             <br />
             <hr />
+            <label className="field_left monospace"><b>MBTI personality:</b></label>
+            <br />
+            <label className="link monospace">
+                <a href={profile.person_description.mbti.url}>
+                    {profile.person_description.mbti.name}
+                </a>
+            </label>
+            <br />
+            <hr />
             <label className="field_left monospace"><b>Characteristics:</b></label>
             <br />
             <label className="monospace">{profile.person_description.characteristic.join(", ")}</label>
