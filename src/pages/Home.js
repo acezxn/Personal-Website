@@ -109,14 +109,14 @@ export const Home = () => {
             <div style={{ position: "absolute", top: "30vh", width: "100vw" }}>
                 <div style={{ textAlign: "center" }}>
                     <div className="typing_container" style={{ height: 100 }}>
-                        <h1 style={{ fontFamily: "Fira Mono" }}><span ref={titleRef} className="sentence"></span></h1>
+                        <h1 className="monospace"><span ref={titleRef} className="sentence"></span></h1>
                         {
                             titleTyping && <span className="input_cursor_h1"></span>
                         }
                     </div>
                     <br />
                     <div className="typing_container" style={{ height: 70 }}>
-                        <h2 style={{ fontFamily: "Fira Mono", color: "var(--secondary-color)" }}><span ref={subtitleRef} className="sentence"></span></h2>
+                        <h2 className="monospace" style={{ color: "var(--secondary-color)" }}><span ref={subtitleRef} className="sentence"></span></h2>
                         {
                             subtitleTyping && <span className="input_cursor_h2"></span>
                         }
