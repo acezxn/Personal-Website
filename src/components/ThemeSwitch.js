@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { ReactComponent as Sun } from "./../sun.svg"
 import { ReactComponent as Moon } from "./../moon.svg"
+import themeData from "./../data/theme.json"
+
 export const ThemeSwitch = () => {
     const [theme, setTheme] = useState("");
 
@@ -35,9 +37,9 @@ export const ThemeSwitch = () => {
             <button style={{ backgroundColor: "transparent", border: "none" }} onClick={toggleTheme}>
                 {
                     theme === "light" ? (
-                        <Sun width={35} height={35} fill="#680bd9"/>
+                        <Sun width={35} height={35} fill={themeData.light.primary_color}/>
                     ) : (
-                        <Moon width={35} height={35} fill="#8ee729" />
+                        <Moon width={35} height={35} fill={themeData.dark.primary_color} />
                     )
                 }
             </button>

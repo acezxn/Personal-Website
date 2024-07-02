@@ -1,15 +1,17 @@
-import "./css/InfoCard.css"
 import profile from "./../data/profile.json";
 import { FaRegImages } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import theme from "./../data/theme.json"
+import "./css/InfoCard.css"
+
 
 
 export const ProjectsCard = () => {
-    const [color, setColor] = useState("#8ee729");
+    const [color, setColor] = useState(theme.dark.primary_color);
     useEffect(() => {
         const handleStorage = () => {
-            setColor(localStorage.getItem("theme") === "light" ? "#680bd9" : "#8ee729");
+            setColor(localStorage.getItem("theme") === "light" ? theme.light.primary_color : theme.dark.primary_color);
         }
         window.addEventListener("storage", handleStorage);
     }, []);

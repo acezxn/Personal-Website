@@ -3,6 +3,8 @@ import profile from "./../data/profile.json";
 import DeckGL, { GeoJsonLayer, _GlobeView as GlobeView } from 'deck.gl';
 import { IconLayer } from '@deck.gl/layers';
 import { useEffect, useState } from "react";
+import theme from "./../data/theme.json"
+import Utils from "../objects/utils";
 
 
 const dataUrl = {
@@ -10,7 +12,7 @@ const dataUrl = {
 };
 
 export const BasicInfoCard = () => {
-    const [mapColor, setMapColor] = useState([142, 231, 41]);
+    const [mapColor, setMapColor] = useState(Utils.hexToRgbArray(theme.dark.primary_color));
     const initialViewState = {
         longitude: profile.basic_information.coordinate[1],
         latitude: profile.basic_information.coordinate[0],
@@ -31,7 +33,7 @@ export const BasicInfoCard = () => {
 
     useEffect(() => {
         const handleStorage = () => {
-            setMapColor(localStorage.getItem("theme") === "light" ? [104, 11, 217] : [142, 231, 41]);
+            setMapColor(Utils.hexToRgbArray(localStorage.getItem("theme") === "light" ? theme.light.primary_color : theme.dark.primary_color));
         };
         window.addEventListener("storage", handleStorage);
         handleStorage();

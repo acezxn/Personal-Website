@@ -198,5 +198,17 @@
                 }
             ]
         }
+    },
+    "status": {
+        "fun_fact": [
+            "I actually cycled around my home country (Taiwan)",
+            "I passed the Certified Ethical Hacker (CEH) exam in a week"
+        ],
+        "task": [
+            "Learning in NTUT",
+            "Preparing for ISC2 Certified in Cybersecurity (CC) certification",
+            "Discovering new ideas",
+            "Playing volleyball"
+        ]
     }
 }

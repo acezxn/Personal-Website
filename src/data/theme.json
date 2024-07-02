@@ -1,0 +1,34 @@
+{
+    "dark": {
+        "primary_color": "#8ee729",
+        "secondary_color": "#b2c5ff",
+        "selection_color": "#83a2ff82",
+        "font_primary_color": "#eff1ff",
+        "font_secondary_color": "#000000",
+        "error_color": "#cc3c3c",
+        "bg_color": "#14141f",
+        "widget_color": "#242436",
+        "widget_mask_color": "rgba(255, 255, 255, 0.1)",
+        "number_color": "rgb(75, 255, 174)",
+        "primary_font": "Roboto"
+    }, 
+    "light": {
+        "primary_color": "#680bd9",
+        "secondary_color": "#b977c2",
+        "selection_color": "#edaeffc4",
+        "font_primary_color": "#0d0d22",
+        "font_secondary_color": "#ffffff",
+        "error_color": "#cc3c3c",
+        "bg_color": "#f6f6ff",
+        "widget_color": "hsl(260, 100%, 99%)",
+        "number_color": "rgb(167, 0, 182)",
+        "widget_mask_color": "rgba(0, 0, 0, 0.1)",
+        "primary_font": "Roboto",
+        "fiber_color_one": "#fcf7ff",
+        "fiber_color_two": "#efefff",
+        "fiber_color_three": "#ffffff",
+        "fiber_color_four": "#efedf5",
+        "fiber_color_five": "#ffffff",
+        "fiber_color_six": "#fdf5fb"
+    }
+}

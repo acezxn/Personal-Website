@@ -1,39 +1,3 @@
-:root {
-    --primary-color: #8ee729;
-    --secondary-color: #b2c5ff;
-    --selection-color: #83a2ff82;
-    --font-primary-color: #eff1ff;
-    --font-secondary-color: #000000;
-    --error-color: #cc3c3c;
-    --bg-color: #14141f;
-    --widget-color: #242436;
-    --widget-mask-color: rgba(255, 255, 255, 0.1);
-    --number-color: rgb(75, 255, 174);
-    --primary-font: "Roboto";
-}
-
-
-[data-theme="light"] {
-    --primary-color: #680bd9;
-    --secondary-color: #b977c2;
-    --selection-color: #edaeffc4;
-    --font-primary-color: #0d0d22;
-    --font-secondary-color: #ffffff;
-    --error-color: #cc3c3c;
-    --bg-color: #f6f6ff;
-    --widget-color: hsl(260, 100%, 99%);
-    --number-color: rgb(167, 0, 182);
-    --widget-mask-color: rgba(0, 0, 0, 0.1);
-    --primary-font: "Roboto";
-
-    --fiber-color-one: #fcf7ff;
-    --fiber-color-two: #efefff;
-    --fiber-color-three: #ffffff;
-    --fiber-color-four: #efedf5;
-    --fiber-color-five: #ffffff;
-    --fiber-color-six: #fdf5fb;
-}
-
 ::-moz-selection {
     background: var(--selection-color);
 }

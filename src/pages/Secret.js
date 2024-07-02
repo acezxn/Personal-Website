@@ -1,20 +1,33 @@
+import { useEffect, useState } from "react";
 import { Navbar } from "../components/Navbar"
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
+import profile from "./../data/profile.json";
 
 export const Secret = () => {
+    const [funFact, setFunFact] = useState("");
+    const [task, setTask] = useState("");
+
+    useEffect(() => {
+        const date = new Date();
+        const value = date.getFullYear() + date.getMonth() + date.getDay();
+        setFunFact(profile.status.fun_fact[value % profile.status.fun_fact.length]);
+        setTask(profile.status.task[value % profile.status.task.length]);
+    }, []);
+
     return (
         <>
             <Helmet><title>^_^</title></Helmet>
             <Navbar />
-            <div style={{ height: "calc(40vh - 80px)" }}></div>
-            <p style={{ textAlign: "center" }}>
+            {/* <p style={{ textAlign: "center" }}>
                 <h1 className="monospace" style={{ color: "var(--primary-color)" }}>Hello ^_^</h1>
-                <h2 className="monospace">I guess you found the secret page</h2>
-            </p>
-            <div style={{ display: "flex", justifyContent: "center" }} >
-                <a className="link monospace" href="/">
-                    <h6 style={{ display: "inline-block" }}>Return to home</h6>
-                </a>
+                <h3 className="monospace">I guess you found the secret page</h3>
+            </p> */}
+            <div style={{ margin: 10 }}>
+                <h3 className="monospace" style={{ color: "var(--primary-color)" }}>You've found me!</h3>
+                <h6 className="monospace">Fun fact</h6>
+                <p className="monospace">{funFact}</p>
+                <h6 className="monospace">What I am doing now</h6>
+                <p className="monospace">{task}</p>
             </div>
         </>
     )
