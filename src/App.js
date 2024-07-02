@@ -6,13 +6,16 @@ import {
 import { ResumePage } from "./pages/ResumePage";
 import { Dashboard } from "./pages/Dashboard";
 import { Home } from "./pages/Home";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { NotFound } from "./pages/NotFound";
 import { ProjectsPage } from "./pages/ProjectsPage";
 import { Secret } from "./pages/Secret";
 import theme from "./data/theme.json"
+import Utils from "./objects/utils";
 
 function App() {
+    const [secretValue, setSecretValue] = useState("");
+
     const updateTheme = () => {
         const currentTheme = localStorage.getItem("theme");
 
@@ -72,6 +75,16 @@ function App() {
     }, []);
 
     useEffect(() => {
+        const date = new Date();
+        const value = date.getFullYear() + date.getMonth() + date.getDay();
+        setSecretValue(Utils.createSHA256Hash(value));
+        
+        window.getSecretKey = () => {
+            const date = new Date();
+            const value = date.getFullYear() + date.getMonth() + date.getDay();
+            return Utils.createSHA256Hash(value);
+        };
+
         updateTheme();
         window.addEventListener("storage", updateTheme);
         window.dispatchEvent(new Event("storage"));
@@ -84,7 +97,7 @@ function App() {
                 <Route path="/dashboard" element={<Dashboard />}></Route>
                 <Route path="/resume" element={<ResumePage />}></Route>
                 <Route path="/projects" element={<ProjectsPage />}></Route>
-                <Route path="/secret" element={<Secret />}></Route>
+                <Route path={`/${secretValue}`} element={<Secret />}></Route>
                 <Route path="/*" element={<NotFound />}></Route>
             </Routes>
         </Router>

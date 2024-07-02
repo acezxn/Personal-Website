@@ -41,27 +41,27 @@ export const Home = () => {
         return (window.devicePixelRatio || 1) / backingStore;
     };
 
-    const typeTitles = async () => {
-        if (titleRef.current && !titleTyping) {
-            typeSentence("Cheng-En (Daniel) Lee", titleRef.current, 50)
-                .then(() => {
-                    setTitleTyping(false);
-                })
-            setTitleTyping(true);
-        }
-        if (subtitleRef.current && !subtitleTyping) {
-            await waitForMs(1500);
-            typeSentence("Purdue CS '27", subtitleRef.current, 100)
-                .then(() => {
-                    setSubtitleTyping(false);
-                })
-            setSubtitleTyping(true);
-        }
-    }
-
     useEffect(() => {
+        const typeTitles = async () => {
+            if (titleRef.current && !titleTyping) {
+                typeSentence("Cheng-En (Daniel) Lee", titleRef.current, 50)
+                    .then(() => {
+                        setTitleTyping(false);
+                    })
+                setTitleTyping(true);
+            }
+            if (subtitleRef.current && !subtitleTyping) {
+                await waitForMs(1500);
+                typeSentence("Purdue CS '27", subtitleRef.current, 100)
+                    .then(() => {
+                        setSubtitleTyping(false);
+                    })
+                setSubtitleTyping(true);
+            }
+        }
+        
         typeTitles();
-    }, []);
+    }, [titleTyping, subtitleTyping]);
 
     useEffect(() => {
         let canvas = canvasRef.current;
