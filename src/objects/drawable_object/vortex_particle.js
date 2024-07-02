@@ -62,7 +62,7 @@ export default class VortexParticle extends DrawableObject {
         if (this.#connections === 0) {
             ctx.fillStyle = "rgba(0, 0, 0, 0)";
         } else {
-            ctx.fillStyle = localStorage.getItem("theme") === "light" ? "#680bd9" : "#6ce729"
+            ctx.fillStyle = localStorage.getItem("theme") === "light" ? "#680bd9" : "#8ee729"
         }
         ctx.beginPath();
         ctx.arc(this.#position.x, this.#position.y, this.#size, 0, 2 * Math.PI);

@@ -54,9 +54,9 @@ export default class Scene extends DrawableObject {
                         }
                     } else {
                         if (distance > Scene.connectDistance - Scene.fadeDistance) {
-                            ctx.strokeStyle = `rgba(108, 231, 41, ${1 - (distance - Scene.connectDistance + Scene.fadeDistance) / Scene.fadeDistance})`
+                            ctx.strokeStyle = `rgba(142, 231, 41, ${1 - (distance - Scene.connectDistance + Scene.fadeDistance) / Scene.fadeDistance})`
                         } else {
-                            ctx.strokeStyle = "rgba(108, 231, 41, 1)"
+                            ctx.strokeStyle = "rgba(142, 231, 41, 1)"
                         }
                     }
                     ctx.lineWidth = 2;

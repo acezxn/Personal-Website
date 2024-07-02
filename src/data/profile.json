@@ -67,6 +67,11 @@
     },
     "experiences": [
         {
+            "name": "NTUT Financial Cybersecurity Lab",
+            "role": "Assistant",
+            "description": "Took part in the NTUT Financial Cybersecurity Lab, where I contributed to research focused on establishing a testing environment and devising a methodology for analyzing WIFI signals emitted by IoT devices. Involving in this lab also allowed me to gain domain knowledge in the field of FinTech and principles of incident response."
+        },
+        {
             "name": "b01lers Capture The Flag Team",
             "role": "Participant",
             "description": "Participated in the Capture the flag team as a member in Purdue University, which is currently ranked 7th in national standings."
@@ -74,7 +79,7 @@
         {
             "name": "Purdue Robomasters Club",
             "role": "Algorithm team developer",
-            "description": "Participated in the algorithm team of the Purdue Robomasters club, which is responsible for developing computer vision, auto aiming, and auto navigagion pipelines."
+            "description": "Participated in the algorithm team of the Purdue Robomasters club, which is responsible for developing computer vision, auto aiming, and auto navigagion pipelines. I am involved in developing algorithms to assist auto aiming while aiming at a spinning robot."
         },
         {
             "name": "EC-Council Certified Ethical Hacker (CEH) Certification",
@@ -84,7 +89,7 @@
         {
             "name": "The Data Mine, Purdue University, West Lafayette, IN",
             "role": "Undergraduate data engineer",
-            "description": "Collaborated with Knudsen Institute on analyzing trends in supply chains on industrial parts procurement in the automotive industry, and trained to use R and Python to perform time series analysis, dynamic time warping, and ARIMA modeling, as well as interact with multiple databases."
+            "description": "Collaborated with Knudsen Institute on analyzing trends in supply chains on industrial parts procurement in the automotive industry. I was trained to use R and Python to perform time series analysis, dynamic time warping, and ARIMA modeling, as well as storing and querying time series data with multiple databases."
         }
     ],
     "projects": [
