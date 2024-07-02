@@ -27,19 +27,7 @@ export const Home = () => {
     const titleRef = useRef(null);
     const subtitleRef = useRef(null);
     var canvasRef = useRef(null);
-
-    const getPixelRatio = context => {
-        var backingStore =
-            context.backingStorePixelRatio ||
-            context.webkitBackingStorePixelRatio ||
-            context.mozBackingStorePixelRatio ||
-            context.msBackingStorePixelRatio ||
-            context.oBackingStorePixelRatio ||
-            context.backingStorePixelRatio ||
-            1;
-
-        return (window.devicePixelRatio || 1) / backingStore;
-    };
+    var lastUpdate = performance.now();
 
     useEffect(() => {
         const typeTitles = async () => {
@@ -59,7 +47,7 @@ export const Home = () => {
                 setSubtitleTyping(true);
             }
         }
-        
+
         typeTitles();
     }, []);
 
@@ -69,18 +57,23 @@ export const Home = () => {
         let requestId;
 
         const draw = (ctx) => {
-            let ratio = getPixelRatio(ctx);
-        let width = window.innerWidth;
-        let height = window.innerHeight;
-        canvas.width = width * ratio;
-        canvas.height = height * ratio;
-        canvas.style.width = `${width}px`;
-        canvas.style.height = `${height}px`;
+            let width = window.innerWidth;
+            let height = window.innerHeight;
+            console.log(width, height)
+            canvas.width = width;
+            canvas.height = height;
+            canvas.style.width = `${width}px`;
+            canvas.style.height = `${height}px`;
             ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
             Scene.render(ctx);
         }
 
         const render = () => {
+
+            // 60 fps limit 
+            while (performance.now() - lastUpdate < 1000 / 60);
+            lastUpdate = performance.now();
+
             draw(ctx);
             requestId = window.requestAnimationFrame(render)
         }
@@ -93,7 +86,7 @@ export const Home = () => {
         })
         setInterval(() => {
             Scene.spawnVortexParticle(ctx);
-        }, 80);
+        }, 100);
 
 
         render(ctx);
