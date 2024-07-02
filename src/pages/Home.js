@@ -61,7 +61,7 @@ export const Home = () => {
         }
         
         typeTitles();
-    }, [titleTyping, subtitleTyping]);
+    }, []);
 
     useEffect(() => {
         let canvas = canvasRef.current;
