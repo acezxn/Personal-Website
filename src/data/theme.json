@@ -30,5 +30,8 @@
         "fiber_color_four": "#efedf5",
         "fiber_color_five": "#ffffff",
         "fiber_color_six": "#fdf5fb"
+    },
+    "common": {
+        "torus_color": "#7e679c"
     }
 }
