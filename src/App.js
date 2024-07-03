@@ -75,13 +75,20 @@ function App() {
     }, []);
 
     useEffect(() => {
-        const date = new Date();
-        const value = date.getFullYear() + date.getMonth() + date.getDay();
-        setSecretValue(Utils.createSHA256Hash(value));
-        
+        const updateSecretKey = () => {
+            const date = new Date();
+            const value = `${date.getFullYear()}${date.getMonth()}${date.getDay()}${date.getMinutes()}`;
+            setSecretValue(Utils.createSHA256Hash(value));
+        }
+
+        updateSecretKey();
+        setInterval(() => {
+            updateSecretKey();
+        }, 10000);
+
         window.getSecretKey = () => {
             const date = new Date();
-            const value = date.getFullYear() + date.getMonth() + date.getDay();
+            const value = `${date.getFullYear()}${date.getMonth()}${date.getDay()}${date.getMinutes()}`;
             return Utils.createSHA256Hash(value);
         };
 

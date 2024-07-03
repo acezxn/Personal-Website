@@ -26,11 +26,11 @@ export const NotFound = () => {
     return (
         <>
             <Helmet><title>Not found</title></Helmet>
-            <Canvas>
-                <ambientLight intensity={0.5} />
-                <directionalLight position={[10, 10, 10]} intensity={0.5} />
-                <Icosphere />
-            </Canvas>
+            <div style={{ width: "100vw", height: "100vh" }}>
+                <Canvas>
+                    <Icosphere />
+                </Canvas>
+            </div>
 
             <div style={{ position: "absolute", top: 0, width: "100vw" }}>
                 <Navbar />

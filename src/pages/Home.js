@@ -59,7 +59,6 @@ export const Home = () => {
         const draw = (ctx) => {
             let width = window.innerWidth;
             let height = window.innerHeight;
-            console.log(width, height)
             canvas.width = width;
             canvas.height = height;
             canvas.style.width = `${width}px`;
