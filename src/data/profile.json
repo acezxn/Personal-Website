@@ -67,9 +67,9 @@
     },
     "experiences": [
         {
-            "name": "NTUT Financial Cybersecurity Lab",
+            "name": "Financial Cybersecurity Lab, National Taipei University of Technology (NTUT)",
             "role": "Assistant",
-            "description": "Took part in the NTUT Financial Cybersecurity Lab, where I contributed to research focused on establishing a testing environment and devising a methodology for analyzing WIFI signals emitted by IoT devices. Involving in this lab also allowed me to gain domain knowledge in the field of FinTech and principles of incident response."
+            "description": "Took part in the Financial Cybersecurity Lab, where I contributed to research focused on devising a methodology for analyzing WIFI signals emitted by IoT devices and providing introductions of SDRs to new members of the lab."
         },
         {
             "name": "b01lers Capture The Flag Team",
@@ -202,12 +202,14 @@
     "status": {
         "fun_fact": [
             "I actually cycled around my home country (Taiwan)",
-            "I passed the Certified Ethical Hacker (CEH) exam in a week"
+            "I passed the Certified Ethical Hacker (CEH) exam in a week",
+            "I have a sister who graduated from CMU: https://www.jessicajiaenlee.me/"
         ],
         "task": [
             "Learning in NTUT",
             "Preparing for ISC2 Certified in Cybersecurity (CC) certification",
             "Discovering new ideas",
+            "Learning how to use GNU Radio on Hackrf to capture WIFI/Bluetooth signals",
             "Playing volleyball"
         ]
     }
