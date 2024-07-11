@@ -44,7 +44,7 @@ export const Secret = () => {
                     <SpinningTorus />
                 </Canvas>
             </div>
-            <div style={{ position: "absolute", top: "30vh", width: "100vw", margin: 10 }}>
+            <div style={{ position: "absolute", top: "30vh", width: "calc(100vw - 20px)", margin: 20 }}>
                 <h3 className="monospace" style={{ color: "var(--primary-color)" }}>You've found me!</h3>
                 <h6 className="monospace">Fun fact</h6>
                 <p className="monospace">{funFact}</p>
