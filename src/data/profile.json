@@ -85,7 +85,12 @@
         {
             "name": "ISC2 Certified in Cybersecurity Certification",
             "role": "Member",
-            "description": "Self-educated in security principles, incident response, access controls, network security, and security operations. Successfully passed the ISC2's CC certification exam and earned the certification."
+            "description": "Self-educated in security principles, incident response, access controls, network security, and security operations. Successfully passed the ISC2's CC certification exam by July 2024 and earned the certification."
+        },
+        {
+            "name": "EC-Council Certified Ethical Hacker (CEH) Certification",
+            "role": "Participant",
+            "description": "Participated in EC-Council's CEH training program, and passed the certification exam in July 2022."
         },
         {
             "name": "The Data Mine, Purdue University, West Lafayette, IN",
