@@ -21,6 +21,10 @@ export const ContactCard = () => {
             <label className="field_right monospace link"><a href={`https://${profile.contact.github}`}>{profile.contact.github}</a></label>
             <br />
             <hr />
+            <label className="field_left monospace"><b>LinkedIn</b></label>
+            <label className="field_right monospace link"><a href={`https://${profile.contact.linkedin}`}>{profile.contact.linkedin}</a></label>
+            <br />
+            <hr />
         </div>
     )
 }
