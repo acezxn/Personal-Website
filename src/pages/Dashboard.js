@@ -10,6 +10,7 @@ import { Navbar } from "../components/Navbar"
 import { useEffect, useState } from "react"
 import { Helmet } from 'react-helmet';
 import "./css/Dashboard.css"
+import { CertCard } from "../components/CertCard"
 
 export const Dashboard = () => {
     const [width, setWidth] = useState(window.innerWidth);
@@ -34,11 +35,12 @@ export const Dashboard = () => {
                                 <div style={{ minWidth: "calc(100vw / 3 - 20)" }}>
                                     <BasicInfoCard />
                                     <PersonDescriptionCard />
+                                    <ResumeCard />
                                 </div>
                                 <div style={{ minWidth: "calc(100vw / 3 - 20)" }}>
                                     <SkillsCard />
+                                    <CertCard />
                                     <ExperiencesCard />
-                                    <ResumeCard />
                                 </div>
                                 <div style={{ minWidth: "calc(100vw / 3 - 20)" }}>
                                     <ProjectsCard />
@@ -56,12 +58,13 @@ export const Dashboard = () => {
                                                 <PersonDescriptionCard />
                                                 <ContactCard />
                                                 <ResumeCard />
+                                                <GradesCard />
                                             </div>
                                             <div style={{ minWidth: "calc(100vw / 2 - 20)" }}>
                                                 <SkillsCard />
+                                                <CertCard />
                                                 <ExperiencesCard />
                                                 <ProjectsCard />
-                                                <GradesCard />
                                             </div>
                                         </>
                                     ) : (
@@ -71,6 +74,7 @@ export const Dashboard = () => {
                                                 <PersonDescriptionCard />
                                                 <ContactCard />
                                                 <SkillsCard />
+                                                <CertCard />
                                                 <ProjectsCard />
                                                 <ExperiencesCard />
                                                 <GradesCard />

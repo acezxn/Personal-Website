@@ -26,7 +26,7 @@ export const GradesCard = () => {
                     profile.grades.university.courses.map((course) => (
                         <tr>
 
-                            <td>{course.name}</td>
+                            <td><a className="link" href={course.link} target="_blank" rel="noopener noreferrer">{course.name}</a></td>
                             <td>{course.semester}</td>
                             <td>{course.grade}</td>
                         </tr>

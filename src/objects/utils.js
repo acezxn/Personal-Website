@@ -31,4 +31,8 @@ export default class Utils {
         const hash = sha256(inputString);
         return hash.toString(hex);
     }
+
+    static capitalize(inputString) {
+        return inputString.charAt(0).toUpperCase() + inputString.slice(1);
+    }
 }

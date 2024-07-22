@@ -43,6 +43,22 @@
             "Competitive"
         ]
     },
+    "certifications": {
+        "cybersecurity": [
+            {
+                "name": "CC",
+                "provider": "ISC2",
+                "issued_time": "Jul 2024",
+                "expiry_time": "Jul 2027"
+            },
+            {
+                "name": "CEH",
+                "provider": "EC-Council",
+                "issued_time": "Jul 2022",
+                "expiry_time": "Jul 2025"
+            }
+        ]
+    },
     "skills": {
         "programming_languages": [
             "C",
@@ -152,31 +168,37 @@
             "courses": [
                 {
                     "name": "MA26500",
+                    "link": "https://www.math.purdue.edu/academic/courses/coursepage?subject=MA&course=26500",
                     "semester": "Spring 2024",
                     "grade": "A-"
                 },
                 {
                     "name": "CS18200",
+                    "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs182.html",
                     "semester": "Spring 2024",
                     "grade": "A"
                 },
                 {
                     "name": "CS24000",
+                    "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs240.html",
                     "semester": "Spring 2024",
                     "grade": "A"
                 },
                 {
                     "name": "CS18000",
+                    "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs180.html",
                     "semester": "Fall 2023",
                     "grade": "A"
                 },
                 {
                     "name": "CS19300",
+                    "link": "https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=202010&subj_code_in=CS&crse_numb_in=19300",
                     "semester": "Fall 2023",
                     "grade": "A"
                 },
                 {
                     "name": "MA26100",
+                    "link": "https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=201510&subj_code_in=MA&crse_numb_in=26100",
                     "semester": "Fall 2023",
                     "grade": "A+"
                 }

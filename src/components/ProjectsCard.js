@@ -45,7 +45,7 @@ export const ProjectsCard = () => {
             <a className="link monospace" href="/projects" style={{ fontSize: 14 }}>More Photos</a>
             <br />
             <FaGithub style={{ verticalAlign: "middle", margin: 5, marginLeft: 0 }} color={color} size={20} />
-            <a className="link monospace" href={`https://${profile.contact.github}`} style={{ fontSize: 14 }}>Visit Github</a>
+            <a className="link monospace" href={`https://${profile.contact.github}`} target="_blank" rel="noopener noreferrer" style={{ fontSize: 14 }}>Visit Github</a>
             <hr />
         </div>
     )
