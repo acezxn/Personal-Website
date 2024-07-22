@@ -4,7 +4,7 @@ import Utils from "../objects/utils";
 
 export const CertCard = () => {
     return (
-        <div className="info_card" style={{ height: 200 }}>
+        <div className="info_card">
             <h6
                 className="monospace"
                 style={{
