@@ -20,9 +20,8 @@
     color: var(--primary-color);
 }
 
-.field_left {
+.field_title {
     font-size: 18px;
-    display: inline-block;
 }
 
 .field_right {

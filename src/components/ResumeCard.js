@@ -20,7 +20,7 @@ export const ResumeCard = () => {
                 style={{
                     color: "var(--primary-color)"
                 }}>Resume</h6>
-            <label className="field_left monospace">1 document found</label>
+            <label className="field_title monospace">1 document found</label>
             <br />
             <a href="/resume">
                 <div>

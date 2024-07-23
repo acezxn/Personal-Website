@@ -9,10 +9,10 @@ export const GradesCard = () => {
                 style={{
                     color: "var(--primary-color)"
                 }}>Grades</h6>
-            <label className="field_left monospace"><b>Purdue University:</b></label>
+            <label className="field_title monospace"><b>Purdue University:</b></label>
             <br />
             <br />
-            <label className="field_left monospace">GPA:</label>
+            <label className="field_title monospace">GPA:</label>
             <label className="field_right monospace">{profile.grades.university.gpa}</label>
             <hr />
             <br />
@@ -34,13 +34,13 @@ export const GradesCard = () => {
                 }
             </table>
             <br />
-            <label className="field_left monospace"><b>High School:</b></label>
+            <label className="field_title monospace"><b>High School:</b></label>
             <br />
             <br />
-            <label className="field_left monospace">GPA:</label>
+            <label className="field_title monospace">GPA:</label>
             <label className="field_right monospace">{profile.grades.high_school.gpa}</label>
             <hr />
-            <label className="field_left monospace">SAT:</label>
+            <label className="field_title monospace">SAT:</label>
             <label className="field_right monospace">{profile.grades.high_school.sat}</label>
             <hr />
             <br />

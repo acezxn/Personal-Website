@@ -28,7 +28,7 @@ export const ProjectsCard = () => {
                     if (index < maxPreviewProjects) {
                         return (
                             <>
-                                <label className="field_left monospace link" style={{ fontSize: 18 }}><a href={project.link}><b>{project.name}</b></a></label>
+                                <label className="field_title monospace link" style={{ fontSize: 18 }}><a href={project.link}><b>{project.name}</b></a></label>
                                 <br />
                                 <img src={project.images[0]} alt={project.images[0]} style={{ width: "100%", paddingTop: 5 }} />
                                 <label className="monospace">{project.description}</label>

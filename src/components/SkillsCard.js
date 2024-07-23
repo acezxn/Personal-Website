@@ -10,7 +10,7 @@ export const SkillsCard = () => {
                 style={{
                     color: "var(--primary-color)"
                 }}>Skills</h6>
-            <label className="field_left monospace"><b>Programming Languages:</b></label>
+            <label className="field_title monospace"><b>Programming Languages:</b></label>
             <br />
             <div style={{ lineHeight: "30px" }}>
                 {
@@ -23,7 +23,7 @@ export const SkillsCard = () => {
                 }
             </div>
             <hr />
-            <label className="field_left monospace"><b>Technologies:</b></label>
+            <label className="field_title monospace"><b>Technologies:</b></label>
             <br />
             <div style={{ lineHeight: "30px" }}>
                 {

@@ -13,7 +13,7 @@ export const CertCard = () => {
             {
                 Object.keys(profile.certifications).map((certification_type) => (
                     <>
-                        <label className="field_left monospace"><b>{Utils.capitalize(certification_type)}:</b></label>
+                        <label className="field_title monospace"><b>{Utils.capitalize(certification_type)}:</b></label>
                         <br />
                         <br />
                         <table className="monospace">

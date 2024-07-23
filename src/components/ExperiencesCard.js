@@ -12,17 +12,17 @@ export const ExperiencesCard = () => {
             {
                 profile.experiences.map((experience) => (
                     <>
-                        <label className="field_left monospace"><b>Name:</b></label>
+                        <label className="field_title monospace"><b>Name:</b></label>
                         <br />
                         <label className="monospace">{experience.name}</label>
                         <br />
                         <br />
-                        <label className="field_left monospace"><b>Role:</b></label>
+                        <label className="field_title monospace"><b>Role:</b></label>
                         <br />
                         <label className="monospace">{experience.role}</label>
                         <br />
                         <br />
-                        <label className="field_left monospace"><b>Description:</b></label>
+                        <label className="field_title monospace"><b>Description:</b></label>
                         <br />
                         <label className="monospace">{experience.description}</label>
                         <br />

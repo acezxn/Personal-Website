@@ -46,21 +46,21 @@ export const BasicInfoCard = () => {
                 style={{
                     color: "var(--primary-color)"
                 }}>Basic Information</h6>
-            <label className="field_left monospace"><b>Hometown:</b></label>
+            <label className="field_title monospace"><b>Hometown:</b></label>
             <br />
             <label className="monospace">{profile.basic_information.hometown.address}</label>
             <br />
             <hr />
-            <label className="field_left monospace"><b>Timezone:</b></label>
+            <label className="field_title monospace"><b>Timezone:</b></label>
             <label className="field_right monospace">{profile.basic_information.hometown.timezone}</label>
             <br />
             <hr />
-            <label className="field_left monospace"><b>Spoken Language:</b></label>
+            <label className="field_title monospace"><b>Spoken Language:</b></label>
             <br />
             <label className="monospace">{profile.basic_information.spoken_language.join(", ")}</label>
             <br />
             <hr />
-            <label className="field_left monospace"><b>Current Location:</b></label>
+            <label className="field_title monospace"><b>Current Location:</b></label>
             <DeckGL
                 views={new GlobeView()}
                 style={{
