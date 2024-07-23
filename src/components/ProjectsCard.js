@@ -30,7 +30,14 @@ export const ProjectsCard = () => {
                             <>
                                 <label className="field_title monospace link" style={{ fontSize: 18 }}><a href={project.link}><b>{project.name}</b></a></label>
                                 <br />
-                                <img src={project.images[0]} alt={project.images[0]} style={{ width: "100%", paddingTop: 5 }} />
+                                <img src={project.images[0]} alt={project.images[0]} style={{
+                                    maxWidth: "100%",
+                                    maxHeight: "50vh",
+                                    display: "block",
+                                    marginLeft: "auto",
+                                    marginRight: "auto",
+                                    paddingTop: 10,
+                                    paddingBottom: 10 }} />
                                 <label className="monospace">{project.description}</label>
                                 <br />
                                 <hr />

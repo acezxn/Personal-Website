@@ -11,6 +11,11 @@
     overflow: scroll;
     transition: all 0.2s ease-out;
 }
+@media all and (max-width: 800px) {
+    .info_card {
+        max-height: 50vh;
+    }
+}
 
 .link {
     color: var(--font-primary-color);

@@ -40,7 +40,7 @@ export const BasicInfoCard = () => {
     }, []);
 
     return (
-        <div className="info_card">
+        <div className="info_card">       
             <h6
                 className="monospace"
                 style={{
