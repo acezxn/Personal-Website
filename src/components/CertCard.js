@@ -1,6 +1,7 @@
-import "./css/InfoCard.css"
+import { PiCertificateFill } from "react-icons/pi";
 import profile from "./../data/profile.json";
 import Utils from "../objects/utils";
+import "./css/InfoCard.css"
 
 export const CertCard = () => {
     return (
@@ -27,7 +28,10 @@ export const CertCard = () => {
                                 profile.certifications[certification_type].map((certification) => (
                                     <tr>
 
-                                        <td>{certification.name}</td>
+                                        <td>
+                                            <PiCertificateFill style={{ verticalAlign: "middle", margin: 5, marginLeft: 0 }} size={20}/>
+                                            {certification.name}
+                                        </td>
                                         <td>{certification.provider}</td>
                                         <td>{certification.issued_time}</td>
                                         <td>{certification.expiry_time}</td>

@@ -86,17 +86,12 @@
         {
             "name": "Financial Cybersecurity Lab, National Taipei University of Technology (NTUT)",
             "role": "Assistant",
-            "description": "Took part in the Financial Cybersecurity Lab, where I contributed to research focused on devising a methodology for analyzing WIFI signals emitted by IoT devices and providing introductions of SDRs to new members of the lab."
-        },
-        {
-            "name": "b01lers Capture The Flag Team",
-            "role": "Participant",
-            "description": "Participated in the Capture the flag team as a member in Purdue University, which is currently ranked 7th in national standings."
+            "description": "Took part in the Financial Cybersecurity Lab, where I contributed to research focused on devising a methodology for analyzing WIFI packets emitted by IoT devices and providing introductions of SDRs to new members of the lab."
         },
         {
             "name": "Purdue Robomasters Club",
-            "role": "Algorithm team developer",
-            "description": "Participated in the algorithm team of the Purdue Robomasters club, which is responsible for developing computer vision, auto aiming, and auto navigagion pipelines. I am involved in developing algorithms to assist auto aiming while aiming at a spinning robot."
+            "role": "Algorithm lead",
+            "description": "Participated in the algorithm team of the Purdue Robomasters club, which is responsible for developing computer vision, auto aiming, and auto navigagion pipelines. I am involved in developing algorithms to assist auto aiming while aiming at a constantly moving target."
         },
         {
             "name": "ISC2 Certified in Cybersecurity Certification",
@@ -117,7 +112,7 @@
     "projects": [
         {
             "name": "OpenTeam",
-            "description": "An online team management tool using React JS, Material UI, and Firebase. Featured functionalities include public and private teaming system, real time task management, and real time communication.",
+            "description": "An online team management tool using React JS, Material UI, and Firebase. Featured functionalities include customizable teaming permissions, real time task management, and real time communication.",
             "link": "https://github.com/acezxn/OpenTeam",
             "images": [
                 "/assets/images/openteam/discussions.png",
