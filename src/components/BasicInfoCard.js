@@ -16,7 +16,7 @@ export const BasicInfoCard = () => {
     const initialViewState = {
         longitude: profile.basic_information.coordinate[1],
         latitude: profile.basic_information.coordinate[0],
-        zoom: 1.4
+        zoom: 0
     };
 
     const iconLayer = new IconLayer({
