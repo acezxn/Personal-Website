@@ -80,6 +80,9 @@
             "Redis",
             "Docker",
             "ROS"
+        ],
+        "badges": [
+            "https://tryhackme-badges.s3.amazonaws.com/acezxn.png"
         ]
     },
     "experiences": [

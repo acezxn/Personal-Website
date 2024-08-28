@@ -12,6 +12,7 @@ import { ProjectsPage } from "./pages/ProjectsPage";
 import { Secret } from "./pages/Secret";
 import theme from "./data/theme.json"
 import Utils from "./objects/utils";
+import { LearnmorePage } from "./pages/LearnmorePage";
 
 function App() {
     const [secretValue, setSecretValue] = useState("");
@@ -104,6 +105,7 @@ function App() {
                 <Route path="/dashboard" element={<Dashboard />}></Route>
                 <Route path="/resume" element={<ResumePage />}></Route>
                 <Route path="/projects" element={<ProjectsPage />}></Route>
+                <Route path="/learnmore" element={<LearnmorePage />}></Route>
                 <Route path={`/${secretValue}`} element={<Secret />}></Route>
                 <Route path="/*" element={<NotFound />}></Route>
             </Routes>

@@ -36,6 +36,17 @@ export const SkillsCard = () => {
                 }
             </div>
             <hr />
+            <label className="field_title monospace"><b>Badges:</b></label>
+            <br />
+            <div style={{ lineHeight: "30px" }}>
+                {
+                    profile.skills.badges.map((badgeURL) => (
+                        <div style={{ display: "inline-block", paddingTop: 10 }}>
+                            <a href={badgeURL}><img src={badgeURL} alt={badgeURL} /></a>
+                        </div>
+                    ))
+                }
+            </div>
         </div>
     )
 }

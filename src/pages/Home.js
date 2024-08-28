@@ -117,6 +117,11 @@ export const Home = () => {
                     <a href="/dashboard">
                         <input type="button" className="big_button" value="Find out who I am"></input>
                     </a>
+                    <div style={{ height: 200 }}></div>
+
+                </div>
+                <div style={{ position: "fixed", top: "calc(100vh - 48px)", display: "flex", justifyContent: "end", width: "calc(100vw - 20px)"}}>
+                    <a className="link monospace" href="/learnmore">More information</a>
                 </div>
             </div>
         </>
