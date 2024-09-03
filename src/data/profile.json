@@ -114,15 +114,15 @@
     ],
     "projects": [
         {
-            "name": "OpenTeam",
-            "description": "An online team management tool using React JS, Material UI, and Firebase. Featured functionalities include customizable teaming permissions, real time task management, and real time communication.",
-            "link": "https://github.com/acezxn/OpenTeam",
+            "name": "TeamOn",
+            "description": "An online team management tool using React JS, Material UI, and Firebase, aiming to help developers connect, brainstorm, and discuss as a team. Featured functionalities include customizable teaming permissions, real time task management, and real time communication.",
+            "link": "https://github.com/acezxn/TeamOn",
             "images": [
-                "/assets/images/openteam/discussions.png",
-                "/assets/images/openteam/home.png",
-                "/assets/images/openteam/tasks.png",
-                "/assets/images/openteam/chat.png",
-                "/assets/images/openteam/stats.png"
+                "/assets/images/teamon/discussions.png",
+                "/assets/images/teamon/home.png",
+                "/assets/images/teamon/tasks.png",
+                "/assets/images/teamon/chat.png",
+                "/assets/images/teamon/stats.png"
             ]
         },
         {
