@@ -40,6 +40,23 @@ export const ExperiencesCard = () => {
                                 </div>
                             )
                         }
+                        {
+                            experience.links && (
+                                <>
+                                    <br />
+                                    <label className="monospace"><b>Visit the following for more information:</b></label>
+                                    <br />
+                                    {
+                                        experience.links.map((link) => (
+                                            <>
+                                                <label className="monospace link"><a href={link} target="_blank" rel="noopener noreferrer">{link}</a></label>
+                                                <br />
+                                            </>
+                                        ))
+                                    }
+                                </>
+                            )
+                        }
                         <hr />
                     </>
                 ))

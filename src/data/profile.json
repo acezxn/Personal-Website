@@ -87,16 +87,22 @@
     },
     "experiences": [
         {
-            "name": "Financial Cybersecurity Lab, National Taipei University of Technology (NTUT)",
+            "name": "Financial Cybersecurity Laboratory, National Taipei University of Technology (NTUT)",
             "image": "https://oia.ntut.edu.tw/var/file/32/1032/img/3028/About_Taipei_Tech_pic01.jpg",
             "role": "Assistant",
-            "description": "Took part in the Financial Cybersecurity Lab, where I contributed to research focused on devising a methodology for analyzing WIFI packets emitted by IoT devices and providing introductions of SDRs to new members of the lab."
+            "description": "Took part in the Financial Cybersecurity Laboratory, where I contributed to research focused on devising a methodology for analyzing WIFI packets emitted by IoT devices and providing introductions of SDRs to new members of the lab.",
+            "links": [
+                "https://ifm.ntut.edu.tw/p/405-1083-128740,c16814.php?Lang=en"
+            ]
         },
         {
             "name": "Purdue Robomasters Club",
             "image": "/assets/images/prm/robomaster.gif",
             "role": "Algorithm lead",
-            "description": "Participated in the algorithm team of the Purdue Robomasters club, which is responsible for developing computer vision, auto aiming, and auto navigagion pipelines. I am involved in developing algorithms to assist auto aiming while aiming at a constantly moving target."
+            "description": "Participated in the algorithm team of the Purdue Robomasters club, which is responsible for developing computer vision, auto aiming, and auto navigation pipelines. I am involved in developing algorithms to enhance auto aiming accuracy when the enemy robot is spinning.",
+            "links": [
+                "https://www.robomaster.com/en-US/robo/college-league?djifrom=nav"
+            ]
         },
         {
             "name": "ISC2 Certified in Cybersecurity Certification",
