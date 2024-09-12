@@ -88,11 +88,13 @@
     "experiences": [
         {
             "name": "Financial Cybersecurity Lab, National Taipei University of Technology (NTUT)",
+            "image": "https://oia.ntut.edu.tw/var/file/32/1032/img/3028/About_Taipei_Tech_pic01.jpg",
             "role": "Assistant",
             "description": "Took part in the Financial Cybersecurity Lab, where I contributed to research focused on devising a methodology for analyzing WIFI packets emitted by IoT devices and providing introductions of SDRs to new members of the lab."
         },
         {
             "name": "Purdue Robomasters Club",
+            "image": "/assets/images/prm/robomaster.gif",
             "role": "Algorithm lead",
             "description": "Participated in the algorithm team of the Purdue Robomasters club, which is responsible for developing computer vision, auto aiming, and auto navigagion pipelines. I am involved in developing algorithms to assist auto aiming while aiming at a constantly moving target."
         },
@@ -108,6 +110,7 @@
         },
         {
             "name": "The Data Mine, Purdue University, West Lafayette, IN",
+            "image": "https://datamine.purdue.edu/wp-content/uploads/2024/06/knudsen.png",
             "role": "Undergraduate data engineer",
             "description": "Collaborated with Knudsen Institute on analyzing trends in supply chains on industrial parts procurement in the automotive industry. I was trained to use R and Python to perform time series analysis, dynamic time warping, and ARIMA modeling, as well as storing and querying time series data with multiple databases."
         }

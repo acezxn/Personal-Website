@@ -25,7 +25,21 @@ export const ExperiencesCard = () => {
                         <label className="field_title monospace"><b>Description:</b></label>
                         <br />
                         <label className="monospace">{experience.description}</label>
-                        <br />
+                        {
+                            experience.image && (
+                                <div style={{ overflow: "hidden", width: "100%", maxHeight: 250 }}>
+                                    <img src={experience.image} alt={experience.image} style={{
+                                        maxWidth: "100%",
+                                        maxHeight: "50vh",
+                                        display: "block",
+                                        marginLeft: "auto",
+                                        marginRight: "auto",
+                                        paddingTop: 10,
+                                        paddingBottom: 10
+                                    }} />
+                                </div>
+                            )
+                        }
                         <hr />
                     </>
                 ))
