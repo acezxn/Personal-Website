@@ -28,15 +28,17 @@ export const ExperiencesCard = () => {
                         {
                             experience.image && (
                                 <div style={{ overflow: "hidden", width: "100%", maxHeight: 250 }}>
-                                    <img src={experience.image} alt={experience.image} style={{
-                                        maxWidth: "100%",
-                                        maxHeight: "50vh",
-                                        display: "block",
-                                        marginLeft: "auto",
-                                        marginRight: "auto",
-                                        paddingTop: 10,
-                                        paddingBottom: 10
-                                    }} />
+                                    <a href={experience.image} target="_blank" rel="noopener noreferrer">
+                                        <img src={experience.image} alt={experience.image} style={{
+                                            maxWidth: "100%",
+                                            maxHeight: "50vh",
+                                            display: "block",
+                                            marginLeft: "auto",
+                                            marginRight: "auto",
+                                            paddingTop: 10,
+                                            paddingBottom: 10
+                                        }} />
+                                    </a>
                                 </div>
                             )
                         }

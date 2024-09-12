@@ -106,6 +106,7 @@
         },
         {
             "name": "ISC2 Certified in Cybersecurity Certification",
+            "image": "/assets/images/cc/digicert.png",
             "role": "Member",
             "description": "Self-educated in security principles, incident response, access controls, network security, and security operations. Successfully passed the ISC2's CC certification exam by July 2024 and earned the certification."
         },

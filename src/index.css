@@ -24,6 +24,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--bg-color);
     color: var(--font-primary-color);
+    scrollbar-color: var(--widget-mask-color) transparent;
 }
 
 h1 {

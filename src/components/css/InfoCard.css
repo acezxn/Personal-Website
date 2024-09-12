@@ -1,5 +1,4 @@
 .info_card {
-    scrollbar-color: var(--widget-mask-color) transparent;
     background-color: var(--widget-color);
     box-shadow: rgba(5, 0, 24, 0.2) 0px 5px 16px;
     border-radius: 4px;
