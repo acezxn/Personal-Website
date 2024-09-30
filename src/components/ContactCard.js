@@ -25,6 +25,10 @@ export const ContactCard = () => {
             <label className="field_right monospace link"><a href={`https://${profile.contact.linkedin}`} target="_blank" rel="noopener noreferrer">{new URL(`https://${profile.contact.linkedin}`).hostname}</a></label>
             <br />
             <hr />
+            <label className="field_title monospace"><b>Tryhackme</b></label>
+            <label className="field_right monospace link"><a href={`https://${profile.contact.tryhackme}`} target="_blank" rel="noopener noreferrer">{profile.contact.tryhackme}</a></label>
+            <br />
+            <hr />
         </div>
     )
 }
