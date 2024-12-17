@@ -124,7 +124,7 @@
     ],
     "projects": [
         {
-            "name": "Automatic Case Investigator (Work in Progress)",
+            "name": "ACI (Work in Progress)",
             "description": "An on-premise software stack aimed to automate common SOC investigation tasks with AI models, specifically for SIEM and EDR related investigation. It is intended to integrate with popular open-source SOC technologies for incident response.",
             "link": "https://github.com/Automatic-Case-Investigator",
             "images": [
