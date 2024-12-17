@@ -25,13 +25,11 @@
         "link": "https://drive.google.com/file/d/1gfCVZPKeDIB_2XaX7DDHYFhtxEtNqwKc/preview"
     },
     "person_description": {
-        "whoami": "Welcome! I'm Cheng-En (Daniel) Lee, a motivated CS major at Purdue University taking machine intelligence and software engineering track. I am passionate about cybersecurity, frontend/backend development, and robotics. I love crafting meaningful projects that make a positive impact. In my spare time, I love to hack ethically, playing CTFs, and coding for fun.",
+        "whoami": "Welcome! I'm Cheng-En (Daniel) Lee, a motivated CS major at Purdue University taking security and software engineering track. I am passionate about cybersecurity, frontend/backend development, and robotics. I love crafting meaningful projects that make a positive impact. In my spare time, I love to learn red/blue teaming and coding for fun.",
         "interests": [
-            "Playing CTF",
-            "Hacking machines",
+            "Red/Blue teaming",
             "Frontend/Backend development",
-            "Creative coding",
-            "Robot autonomy"
+            "Robotics"
         ],
         "mbti": {
             "name": "INTJ-T",
@@ -126,6 +124,14 @@
     ],
     "projects": [
         {
+            "name": "Automatic Case Investigator (Work in Progress)",
+            "description": "An on-premise software stack aimed to automate common SOC investigation tasks with AI models, specifically for SIEM and EDR related investigation. It is intended to integrate with popular open-source SOC technologies for incident response.",
+            "link": "https://github.com/Automatic-Case-Investigator",
+            "images": [
+                "/assets/images/aci/ai_systems.png"
+            ]
+        },
+        {
             "name": "TeamOn",
             "description": "An online team management tool using React JS, Material UI, and Firebase, aiming to help developers connect, brainstorm, and discuss as a team. Featured functionalities include customizable teaming permissions, real time task management, and real time communication.",
             "link": "https://github.com/acezxn/TeamOn",
@@ -177,12 +183,6 @@
             "gpa": "3.97 / 4.0",
             "courses": [
                 {
-                    "name": "MA26500",
-                    "link": "https://www.math.purdue.edu/academic/courses/coursepage?subject=MA&course=26500",
-                    "semester": "Spring 2024",
-                    "grade": "A-"
-                },
-                {
                     "name": "CS18200",
                     "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs182.html",
                     "semester": "Spring 2024",
@@ -195,6 +195,18 @@
                     "grade": "A"
                 },
                 {
+                    "name": "CS25000",
+                    "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs250.html",
+                    "semester": "Fall 2024",
+                    "grade": "A"
+                },
+                {
+                    "name": "CS25100",
+                    "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs251.html",
+                    "semester": "Fall 2024",
+                    "grade": "A-"
+                },
+                {
                     "name": "CS18000",
                     "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs180.html",
                     "semester": "Fall 2023",
@@ -205,6 +217,12 @@
                     "link": "https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=202010&subj_code_in=CS&crse_numb_in=19300",
                     "semester": "Fall 2023",
                     "grade": "A"
+                },
+                {
+                    "name": "MA26500",
+                    "link": "https://www.math.purdue.edu/academic/courses/coursepage?subject=MA&course=26500",
+                    "semester": "Spring 2024",
+                    "grade": "A-"
                 },
                 {
                     "name": "MA26100",
@@ -249,10 +267,11 @@
         "task": [
             "Discovering new ideas",
             "Learning to cook",
-            "Grinding THM/HTB",
+            "Grinding BTLO",
             "Taking DSA course",
             "Reading books",
-            "Playing volleyball"
+            "Playing volleyball",
+            "Preparing BTL1 certification"
         ]
     }
 }
