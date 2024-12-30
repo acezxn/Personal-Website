@@ -111,10 +111,10 @@
             ]
         },
         {
-            "name": "ISC2 Certified in Cybersecurity Certification",
-            "image": "/assets/images/cc/digicert.png",
+            "name": "Blue Team Level 1 Certification (Gold)",
+            "image": "/assets/images/btl1/digicert.png",
             "role": "Member",
-            "description": "Self-educated in security principles, incident response, access controls, network security, and security operations. Successfully passed the ISC2's CC certification exam by July 2024 and earned the certification."
+            "description": "Self-educated in phishing analysis, threat intelligence, digital forensics, SIEM, and incident response. Successfully passed the 24-hour practical incident response exam with the score of 95%."
         },
         {
             "name": "EC-Council Certified Ethical Hacker (CEH) Certification",
@@ -138,18 +138,6 @@
             ]
         },
         {
-            "name": "TeamOn",
-            "description": "An online team management tool using React JS, Material UI, and Firebase, aiming to help developers connect, brainstorm, and discuss as a team. Featured functionalities include customizable teaming permissions, real time task management, and real time communication.",
-            "link": "https://github.com/acezxn/TeamOn",
-            "images": [
-                "/assets/images/teamon/discussions.png",
-                "/assets/images/teamon/home.png",
-                "/assets/images/teamon/tasks.png",
-                "/assets/images/teamon/chat.png",
-                "/assets/images/teamon/stats.png"
-            ]
-        },
-        {
             "name": "Pathtracker Online",
             "description": "An online robot path following simulator designed for VEX Robotics Competition, allowing developers to design and test autonomous routes virtually to boost the development process.",
             "link": "https://github.com/acezxn/Pathtracker-online",
@@ -167,12 +155,15 @@
             ]
         },
         {
-            "name": "Grouping Optimization",
-            "description": "A web application designed to experiment with group satisfaction optimization algorithms using multiple self-invented algorithms. Featured functionalities including classroom management system and group optimization algorithms.",
-            "link": "https://github.com/acezxn/Grouping-optimization",
+            "name": "TeamOn",
+            "description": "An online team management tool using React JS, Material UI, and Firebase, aiming to help developers connect, brainstorm, and discuss as a team. Featured functionalities include customizable teaming permissions, real time task management, and real time communication.",
+            "link": "https://github.com/acezxn/TeamOn",
             "images": [
-                "https://user-images.githubusercontent.com/14313049/211586141-5ca58b48-599a-47b7-ad9b-cb8e46b6c474.png",
-                "https://user-images.githubusercontent.com/14313049/211585733-3238b71e-2c72-44cf-a7c0-a92f213c67ef.png"
+                "/assets/images/teamon/discussions.png",
+                "/assets/images/teamon/home.png",
+                "/assets/images/teamon/tasks.png",
+                "/assets/images/teamon/chat.png",
+                "/assets/images/teamon/stats.png"
             ]
         },
         {
@@ -181,6 +172,15 @@
             "link": "https://github.com/acezxn/JavaCry",
             "images": [
                 "https://github.com/acezxn/JavaCry/raw/main/images/YourFilesHaveBeenEncrypted.png"
+            ]
+        },
+        {
+            "name": "Grouping Optimization",
+            "description": "A web application designed to experiment with group satisfaction optimization algorithms using multiple self-invented algorithms. Featured functionalities including classroom management system and group optimization algorithms.",
+            "link": "https://github.com/acezxn/Grouping-optimization",
+            "images": [
+                "https://user-images.githubusercontent.com/14313049/211586141-5ca58b48-599a-47b7-ad9b-cb8e46b6c474.png",
+                "https://user-images.githubusercontent.com/14313049/211585733-3238b71e-2c72-44cf-a7c0-a92f213c67ef.png"
             ]
         }
     ],
