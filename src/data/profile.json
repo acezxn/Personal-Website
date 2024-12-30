@@ -45,6 +45,12 @@
     "certifications": {
         "cybersecurity": [
             {
+                "name": "BTL1 Gold",
+                "provider": "SBT",
+                "issued_time": "Dec 2024",
+                "expiry_time": "-"
+            },
+            {
                 "name": "CC",
                 "provider": "ISC2",
                 "issued_time": "Jul 2024",
@@ -267,11 +273,9 @@
         "task": [
             "Discovering new ideas",
             "Learning to cook",
-            "Grinding BTLO",
             "Taking DSA course",
             "Reading books",
-            "Playing volleyball",
-            "Preparing BTL1 certification"
+            "Playing volleyball"
         ]
     }
 }
