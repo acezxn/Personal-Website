@@ -1,9 +1,46 @@
 import "./css/InfoCard.css"
 import profile from "./../data/profile.json";
+import { useEffect, useRef } from "react";
 
 export const GradesCard = () => {
+    const scrollableDiv = useRef(null);
+    const scrollIndicator = useRef(null);
+    const updateIndicator = () => {
+        if (!scrollableDiv.current || !scrollIndicator.current) {
+            return;
+        }
+        const isAtBottom = scrollableDiv.current.scrollHeight - scrollableDiv.current.scrollTop === scrollableDiv.current.clientHeight;
+        scrollIndicator.current.style.opacity = isAtBottom ? 0 : 0.5;
+    };
+
+    const updateIndicatorPosition = () => {
+        if (!scrollableDiv.current || !scrollIndicator.current) {
+            return;
+        }
+        const rect = scrollableDiv.current.getBoundingClientRect();
+        scrollIndicator.current.style.top = `${rect.top + scrollableDiv.current.clientHeight - 20}px`;
+        scrollIndicator.current.style.left = `${rect.left + scrollableDiv.current.clientWidth / 2}px`;
+    }
+
+    useEffect(() => {
+        updateIndicator();
+        updateIndicatorPosition();
+    }, []);
+
+    useEffect(() => {
+        if (!scrollableDiv.current) {
+            return;
+        }
+        scrollableDiv.current.addEventListener("scroll", updateIndicator);
+        window.addEventListener("scroll", updateIndicatorPosition);
+        const localResizeObserver = new ResizeObserver(updateIndicatorPosition);
+        const globalResizeObserver = new ResizeObserver(updateIndicatorPosition)
+        localResizeObserver.observe(scrollableDiv.current);
+        globalResizeObserver.observe(document.body);
+    }, [scrollableDiv.current]);
+
     return (
-        <div className="info_card" style={{ height: 200 }}>
+        <div className="info_card" ref={scrollableDiv} style={{ height: 200 }}>
             <h6
                 className="monospace"
                 style={{
@@ -59,6 +96,7 @@ export const GradesCard = () => {
                     ))
                 }
             </table>
+            <div className="scroll_indicator" ref={scrollIndicator}></div>
         </div>
     )
 }

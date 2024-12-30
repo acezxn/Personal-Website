@@ -1,4 +1,5 @@
 .info_card {
+    position: relative;
     background-color: var(--widget-color);
     box-shadow: rgba(5, 0, 24, 0.2) 0px 5px 16px;
     border-radius: 4px;
@@ -10,6 +11,16 @@
     overflow: scroll;
     transition: all 0.2s ease-out;
 }
+
+.scroll_indicator {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    transition: opacity 0.2s ease-out;
+}
+
 @media all and (max-width: 800px) {
     .info_card {
         max-height: 50vh;

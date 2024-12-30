@@ -1,23 +1,58 @@
 import profile from "./../data/profile.json";
 import { FaRegImages } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import theme from "./../data/theme.json"
 import "./css/InfoCard.css"
 
-
-
 export const ProjectsCard = () => {
     const [color, setColor] = useState(theme.dark.primary_color);
+    const scrollableDiv = useRef(null);
+    const scrollIndicator = useRef(null);
+    const updateIndicator = () => {
+        if (!scrollableDiv.current || !scrollIndicator.current) {
+            return;
+        }
+        const isAtBottom = scrollableDiv.current.scrollHeight - scrollableDiv.current.scrollTop === scrollableDiv.current.clientHeight;
+        scrollIndicator.current.style.opacity = isAtBottom ? 0 : 0.5;
+    };
+
+    const updateIndicatorPosition = () => {
+        if (!scrollableDiv.current || !scrollIndicator.current) {
+            return;
+        }
+        const rect = scrollableDiv.current.getBoundingClientRect();
+        scrollIndicator.current.style.top = `${rect.top + scrollableDiv.current.clientHeight - 20}px`;
+        scrollIndicator.current.style.left = `${rect.left + scrollableDiv.current.clientWidth / 2}px`;
+    }
+
     useEffect(() => {
         const handleStorage = () => {
             setColor(localStorage.getItem("theme") === "light" ? theme.light.primary_color : theme.dark.primary_color);
         }
         window.addEventListener("storage", handleStorage);
     }, []);
+
+    useEffect(() => {
+        updateIndicator();
+        updateIndicatorPosition();
+    }, []);
+
+    useEffect(() => {
+        if (!scrollableDiv.current) {
+            return;
+        }
+        scrollableDiv.current.addEventListener("scroll", updateIndicator);
+        window.addEventListener("scroll", updateIndicatorPosition);
+        const localResizeObserver = new ResizeObserver(updateIndicatorPosition);
+        const globalResizeObserver = new ResizeObserver(updateIndicatorPosition)
+        localResizeObserver.observe(scrollableDiv.current);
+        globalResizeObserver.observe(document.body);
+    }, [scrollableDiv.current]);
+
     const maxPreviewProjects = 4;
     return (
-        <div className="info_card">
+        <div className="info_card" ref={scrollableDiv}>
             <h6
                 className="monospace"
                 style={{
@@ -48,7 +83,7 @@ export const ProjectsCard = () => {
                             </>
                         )
                     } else {
-                        return (<></>)
+                        return;
                     }
                 })
             }
@@ -58,6 +93,7 @@ export const ProjectsCard = () => {
             <FaGithub style={{ verticalAlign: "middle", margin: 5, marginLeft: 0 }} color={color} size={20} />
             <a className="link monospace" href={`https://${profile.contact.github}`} target="_blank" rel="noopener noreferrer" style={{ fontSize: 14 }}>Visit Github</a>
             <hr />
+            <div className="scroll_indicator" ref={scrollIndicator}></div>
         </div>
     )
 }
