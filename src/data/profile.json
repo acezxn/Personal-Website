@@ -138,6 +138,14 @@
             ]
         },
         {
+            "name": "JavaCry Ransomware Framework",
+            "description": "A ransomware generation framework built entirely in Java, Featuring target directory encryption, secure management of encryption keys, and persistent reverse shell implant for Windows, Linux, and MacOS.",
+            "link": "https://github.com/acezxn/JavaCry",
+            "images": [
+                "https://github.com/acezxn/JavaCry/raw/main/images/YourFilesHaveBeenEncrypted.png"
+            ]
+        },
+        {
             "name": "Pathtracker Online",
             "description": "An online robot path following simulator designed for VEX Robotics Competition, allowing developers to design and test autonomous routes virtually to boost the development process.",
             "link": "https://github.com/acezxn/Pathtracker-online",
@@ -164,14 +172,6 @@
                 "/assets/images/teamon/tasks.png",
                 "/assets/images/teamon/chat.png",
                 "/assets/images/teamon/stats.png"
-            ]
-        },
-        {
-            "name": "JavaCry Ransomware Framework",
-            "description": "A ransomware generation framework built entirely in Java, Featuring target directory encryption, secure management of encryption keys, and persistent reverse shell implant for Windows, Linux, and MacOS.",
-            "link": "https://github.com/acezxn/JavaCry",
-            "images": [
-                "https://github.com/acezxn/JavaCry/raw/main/images/YourFilesHaveBeenEncrypted.png"
             ]
         },
         {
