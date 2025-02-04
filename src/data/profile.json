@@ -134,7 +134,10 @@
             "description": "An on-premise software stack aimed to automate common SOC investigation tasks with AI models, specifically for SIEM and EDR related investigation. It is intended to integrate with popular open-source SOC technologies for incident response.",
             "link": "https://github.com/Automatic-Case-Investigator",
             "images": [
-                "/assets/images/aci/ai_systems.png"
+                "/assets/images/aci/cases.png",
+                "/assets/images/aci/case.png",
+                "/assets/images/aci/tasks.png",
+                "/assets/images/aci/task.png"
             ]
         },
         {
