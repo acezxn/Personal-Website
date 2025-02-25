@@ -149,6 +149,15 @@
             ]
         },
         {
+            "name": "BoilerSyllabi",
+            "description": "My boilermake-xii hackathon project. BoilerSyllabi is an AI-powered syllabus extraction and analysis tool for Purdue students. It extracts course information and summarizes it in an organized manner, both accurately and concisely. It is also capable of web scraping Rate My Professor data about the course instructor, and describe them in a humorous manner.",
+            "link": "https://syllabus.acezxn.me/",
+            "images": [
+                "/assets/images/boilersyllabi/home.png",
+                "/assets/images/boilersyllabi/analysis.png"
+            ]
+        },
+        {
             "name": "Pathtracker Online",
             "description": "An online robot path following simulator designed for VEX Robotics Competition, allowing developers to design and test autonomous routes virtually to boost the development process.",
             "link": "https://github.com/acezxn/Pathtracker-online",
