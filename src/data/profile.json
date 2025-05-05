@@ -131,7 +131,7 @@
     "projects": [
         {
             "name": "ACI (Work in Progress)",
-            "description": "An on-premise software stack aimed to automate common SOC investigation tasks with AI models, specifically for SIEM and EDR related investigation. It is intended to integrate with popular open-source SOC technologies for incident response.",
+            "description": "An on-premise software stack aimed to automate common SOC investigation tasks with AI agents, specifically by performing automated investigations in Security Information and Event Management (SIEM) systems. This software stack ingests security case information, uses AI models to create investigation tasks, breaks them down into activities, and automatically generates and execute queries for relevant security events. Each model is pertained with unlabeled cybersecurity general knowledge and fine-tuned specifically for its task. It is integrated with Open Source SOC softwares (Wazuh, TheHive) for incident response.",
             "link": "https://github.com/Automatic-Case-Investigator",
             "images": [
                 "/assets/images/aci/cases.png",
