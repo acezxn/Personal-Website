@@ -112,7 +112,7 @@
         },
         {
             "name": "Blue Team Level 1 Certification (Gold)",
-            "image": "/assets/images/btl1/digicert.png",
+            "image": "/assets/images/btl1/physical_reward.png",
             "role": "Member",
             "description": "Self-educated in phishing analysis, threat intelligence, digital forensics, SIEM, and incident response. Successfully passed the 24-hour practical incident response exam with the score of 95%."
         },
