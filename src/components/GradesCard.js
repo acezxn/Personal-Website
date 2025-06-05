@@ -56,15 +56,15 @@ export const GradesCard = () => {
             <table className="monospace">
                 <tr>
                     <th>Name</th>
-                    <th>Semester</th>
+                    <th>Title</th>
                     <th>Grade</th>
                 </tr>
                 {
                     profile.grades.university.courses.map((course) => (
                         <tr>
 
-                            <td><a className="link" href={course.link} target="_blank" rel="noopener noreferrer">{course.name}</a></td>
-                            <td>{course.semester}</td>
+                            <td><a className="link" href={course.link} target="_blank" rel="noopener noreferrer">{course.code}</a></td>
+                            <td>{course.name}</td>
                             <td>{course.grade}</td>
                         </tr>
                     ))

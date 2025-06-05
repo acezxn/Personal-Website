@@ -202,51 +202,57 @@
             "gpa": "3.97 / 4.0",
             "courses": [
                 {
-                    "name": "CS18200",
-                    "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs182.html",
-                    "semester": "Spring 2024",
-                    "grade": "A"
-                },
-                {
-                    "name": "CS24000",
-                    "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs240.html",
-                    "semester": "Spring 2024",
-                    "grade": "A"
-                },
-                {
-                    "name": "CS25000",
+                    "code": "CS25000",
                     "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs250.html",
-                    "semester": "Fall 2024",
+                    "name": "Computer Architecture",
                     "grade": "A"
                 },
                 {
-                    "name": "CS25100",
+                    "code": "CS25100",
                     "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs251.html",
-                    "semester": "Fall 2024",
+                    "name": "Data Structure & Algorithms",
                     "grade": "A-"
                 },
                 {
-                    "name": "CS18000",
+                    "code": "CS25200",
+                    "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs252.html",
+                    "name": "System Programming",
+                    "grade": "A"
+                },
+                {
+                    "code": "CS30700",
+                    "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs307.html",
+                    "name": "Software Engineering I",
+                    "grade": "A"
+                },
+                {
+                    "code": "CS18200",
+                    "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs182.html",
+                    "name": "Discrete Mathematics",
+                    "grade": "A"
+                },
+                {
+                    "code": "CS24000",
+                    "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs240.html",
+                    "name": "Programming in C",
+                    "grade": "A"
+                },
+                {
+                    "code": "CS18000",
                     "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs180.html",
-                    "semester": "Fall 2023",
+                    "name": "Problem Solving & OOP",
                     "grade": "A"
                 },
                 {
-                    "name": "CS19300",
-                    "link": "https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=202010&subj_code_in=CS&crse_numb_in=19300",
-                    "semester": "Fall 2023",
-                    "grade": "A"
-                },
-                {
-                    "name": "MA26500",
+                    "code": "MA26500",
                     "link": "https://www.math.purdue.edu/academic/courses/coursepage?subject=MA&course=26500",
-                    "semester": "Spring 2024",
+                    "name": "Linear Algebra",
                     "grade": "A-"
                 },
                 {
-                    "name": "MA26100",
+                    "code": "MA26100",
                     "link": "https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=201510&subj_code_in=MA&crse_numb_in=26100",
-                    "semester": "Fall 2023",
+                    "name": "Calculus III",
                     "grade": "A+"
                 }
             ]
@@ -281,12 +287,12 @@
             "I have a sister who graduated from CMU: https://www.jessicajiaenlee.me/",
             "I used to play piano when I was 12",
             "I have perfect pitch",
-            "24 keys system hurts my ears"
+            "24 keys system hurts my ears",
+            "I am learning tennis"
         ],
         "task": [
             "Discovering new ideas",
             "Learning to cook",
-            "Taking DSA course",
             "Reading books",
             "Playing volleyball"
         ]
