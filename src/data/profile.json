@@ -292,7 +292,9 @@
         ],
         "task": [
             "Discovering new ideas",
-            "Learning to cook",
+            "Interning in Academia Sinica",
+            "Learning Machine Learning / Deep Learning",
+            "Learning to implement auto-regressive transformers in pytorch",
             "Reading books",
             "Playing volleyball"
         ]
