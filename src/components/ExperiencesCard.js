@@ -13,17 +13,17 @@ export const ExperiencesCard = () => {
                 profile.experiences.map((experience) => (
                     <>
                         <label className="field_title monospace"><b>Name:</b></label>
-                        <br />
+                        <div style={{ marginBottom: 2 }}></div>
                         <label className="monospace">{experience.name}</label>
-                        <br />
-                        <br />
+                        <div style={{ marginBottom: 2 }}></div>
+                        <div style={{ marginBottom: 2 }}></div>
                         <label className="field_title monospace"><b>Role:</b></label>
-                        <br />
+                        <div style={{ marginBottom: 2 }}></div>
                         <label className="monospace">{experience.role}</label>
-                        <br />
-                        <br />
+                        <div style={{ marginBottom: 2 }}></div>
+                        <div style={{ marginBottom: 2 }}></div>
                         <label className="field_title monospace"><b>Description:</b></label>
-                        <br />
+                        <div style={{ marginBottom: 2 }}></div>
                         <label className="monospace">{experience.description}</label>
                         {
                             experience.image && (
@@ -45,14 +45,14 @@ export const ExperiencesCard = () => {
                         {
                             experience.links && (
                                 <>
-                                    <br />
+                                    <div style={{ marginBottom: 2 }}></div>
                                     <label className="monospace"><b>Visit the following for more information:</b></label>
-                                    <br />
+                                    <div style={{ marginBottom: 2 }}></div>
                                     {
                                         experience.links.map((link) => (
                                             <>
                                                 <label className="monospace link"><a href={link} target="_blank" rel="noopener noreferrer">{link}</a></label>
-                                                <br />
+                                                <div style={{ marginBottom: 2 }}></div>
                                             </>
                                         ))
                                     }

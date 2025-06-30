@@ -21,7 +21,7 @@ export const ResumeCard = () => {
                     color: "var(--primary-color)"
                 }}>Resume</h6>
             <label className="field_title monospace">1 document found</label>
-            <br />
+            <div style={{ marginBottom: 2 }}></div>
             <a href="/resume">
                 <div>
                     <FaFile style={{ verticalAlign: "middle", margin: 10, marginLeft: 0 }} color={color} size={35} />

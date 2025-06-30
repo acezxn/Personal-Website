@@ -28,7 +28,7 @@ body {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 84px;
     font-weight: 500;
     margin: 0;
 }
@@ -40,7 +40,7 @@ h2 {
 }
 
 h3 {
-    font-size: 50px;
+    font-size: 54px;
     font-weight: 500;
     margin: 0;
 }
@@ -58,7 +58,7 @@ h5 {
 }
 
 h6 {
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 500;
     margin: 0;
 }
@@ -141,7 +141,7 @@ h6 {
 
 
 p {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 b {
@@ -149,6 +149,7 @@ b {
 }
 
 a {
+    font-size: 18px;
     text-decoration: none;
     color: inherit
 }
@@ -168,22 +169,22 @@ table {
 }
 
 tr {
-    font-size: 14px;
+    font-size: 16px;
     border-bottom: 1px solid var(--primary-color);
 }
 
 th {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
 }
 
 td {
-    padding-top: 12px;
+    padding-top: 16px;
     padding-bottom: 2px;
 }
 
 .monospace {
-    font-family: "Noto Sans Mono";
+    font-family: "Titillium Web";
     font-weight: 450;
 }
 
@@ -196,7 +197,7 @@ img {
 }
 
 label {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 code {

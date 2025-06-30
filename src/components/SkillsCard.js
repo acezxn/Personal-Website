@@ -11,7 +11,7 @@ export const SkillsCard = () => {
                     color: "var(--primary-color)"
                 }}>Skills</h6>
             <label className="field_title monospace"><b>Programming Languages:</b></label>
-            <br />
+            <div style={{ marginBottom: 2 }}></div>
             <div style={{ lineHeight: "30px" }}>
                 {
                     profile.skills.programming_languages.map((language) => (
@@ -24,7 +24,7 @@ export const SkillsCard = () => {
             </div>
             <hr />
             <label className="field_title monospace"><b>Technologies:</b></label>
-            <br />
+            <div style={{ marginBottom: 2 }}></div>
             <div style={{ lineHeight: "30px" }}>
                 {
                     profile.skills.technologies.map((technology) => (
@@ -37,7 +37,7 @@ export const SkillsCard = () => {
             </div>
             <hr />
             <label className="field_title monospace"><b>Badges:</b></label>
-            <br />
+            <div style={{ marginBottom: 2 }}></div>
             <div style={{ lineHeight: "30px" }}>
                 {
                     profile.skills.badges.map((badgeURL) => (

@@ -34,7 +34,7 @@ export const NotFound = () => {
 
             <div style={{ position: "absolute", top: 0, width: "100vw" }}>
                 <Navbar />
-                <div style={{ height: "calc(40vh - 80px)" }}></div>
+                <div style={{ height: "calc(34vh - 80px)" }}></div>
                 <p style={{ textAlign: "center" }}>
                     <h1 className="monospace" style={{ color: "var(--error-color)" }}>404</h1>
                     <h2 className="monospace">Page not found</h2>

@@ -64,7 +64,7 @@ export const ProjectsCard = () => {
                         return (
                             <>
                                 <label className="field_title monospace link" style={{ fontSize: 18 }}><a href={project.link}><b>{project.name}</b></a></label>
-                                <br />
+                                <div style={{ marginBottom: 2 }}></div>
                                 <a href={project.images[0]} target="_blank" rel="noopener noreferrer">
                                     <img src={project.images[0]} alt={project.images[0]} style={{
                                         maxWidth: "100%",
@@ -78,7 +78,7 @@ export const ProjectsCard = () => {
                                 </a>
 
                                 <label className="monospace">{project.description}</label>
-                                <br />
+                                <div style={{ marginBottom: 2 }}></div>
                                 <hr />
                             </>
                         )
@@ -88,10 +88,10 @@ export const ProjectsCard = () => {
                 })
             }
             <FaRegImages style={{ verticalAlign: "middle", margin: 5, marginLeft: 0 }} color={color} size={20} />
-            <a className="link monospace" href="/projects" style={{ fontSize: 14 }}>More Photos</a>
-            <br />
+            <a className="link monospace" href="/projects" style={{ fontSize: 18 }}>More Photos</a>
+            <div style={{ marginBottom: 2 }}></div>
             <FaGithub style={{ verticalAlign: "middle", margin: 5, marginLeft: 0 }} color={color} size={20} />
-            <a className="link monospace" href={`https://${profile.contact.github}`} target="_blank" rel="noopener noreferrer" style={{ fontSize: 14 }}>Visit Github</a>
+            <a className="link monospace" href={`https://${profile.contact.github}`} target="_blank" rel="noopener noreferrer" style={{ fontSize: 18 }}>Visit Github</a>
             <hr />
             <div className="scroll_indicator" ref={scrollIndicator}></div>
         </div>

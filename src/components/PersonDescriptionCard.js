@@ -10,28 +10,28 @@ export const PersonDescriptionCard = () => {
                     color: "var(--primary-color)"
                 }}>Person Description</h6>
             <label className="field_title monospace"><b>Whoami:</b></label>
-            <br />
+            <div style={{ marginBottom: 2 }}></div>
             <label className="monospace">{profile.person_description.whoami}</label>
-            <br />
+            <div style={{ marginBottom: 2 }}></div>
             <hr />
             <label className="field_title monospace"><b>Interests:</b></label>
-            <br />
+            <div style={{ marginBottom: 2 }}></div>
             <label className="monospace">{profile.person_description.interests.join(", ")}</label>
-            <br />
+            <div style={{ marginBottom: 2 }}></div>
             <hr />
             <label className="field_title monospace"><b>MBTI personality:</b></label>
-            <br />
+            <div style={{ marginBottom: 2 }}></div>
             <label className="link monospace">
                 <a href={profile.person_description.mbti.url}>
                     {profile.person_description.mbti.name}
                 </a>
             </label>
-            <br />
+            <div style={{ marginBottom: 2 }}></div>
             <hr />
             <label className="field_title monospace"><b>Characteristics:</b></label>
-            <br />
+            <div style={{ marginBottom: 2 }}></div>
             <label className="monospace">{profile.person_description.characteristic.join(", ")}</label>
-            <br />
+            <div style={{ marginBottom: 2 }}></div>
             <hr />
         </div>
     )

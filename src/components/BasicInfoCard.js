@@ -40,27 +40,28 @@ export const BasicInfoCard = () => {
     }, []);
 
     return (
-        <div className="info_card">       
+        <div className="info_card">
             <h6
                 className="monospace"
                 style={{
                     color: "var(--primary-color)"
                 }}>Basic Information</h6>
             <label className="field_title monospace"><b>Hometown:</b></label>
-            <br />
+            <div style={{ marginBottom: 2 }}></div>
             <label className="monospace">{profile.basic_information.hometown.address}</label>
-            <br />
+            <div style={{ marginBottom: 2 }}></div>
             <hr />
             <label className="field_title monospace"><b>Timezone:</b></label>
             <label className="field_right monospace">{profile.basic_information.hometown.timezone}</label>
-            <br />
+            <div style={{ marginBottom: 2 }}></div>
             <hr />
             <label className="field_title monospace"><b>Spoken Language:</b></label>
-            <br />
+            <div style={{ marginBottom: 2 }}></div>
             <label className="monospace">{profile.basic_information.spoken_language.join(", ")}</label>
-            <br />
+            <div style={{ marginBottom: 2 }}></div>
             <hr />
             <label className="field_title monospace"><b>Current Location:</b></label>
+            <div style={{ marginBottom: 2 }}></div>
             <DeckGL
                 views={new GlobeView()}
                 style={{
