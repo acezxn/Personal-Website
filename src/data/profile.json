@@ -25,7 +25,7 @@
         "link": "https://drive.google.com/file/d/1gfCVZPKeDIB_2XaX7DDHYFhtxEtNqwKc/preview"
     },
     "person_description": {
-        "whoami": "Welcome! I'm Cheng-En (Daniel) Lee, a motivated CS major at Purdue University taking security and software engineering track. I am passionate about cybersecurity, frontend/backend development, and robotics. I love crafting meaningful projects that make a positive impact. In my spare time, I love to learn red/blue teaming and coding for fun.",
+        "whoami": "Welcome! I'm Cheng-En (Daniel) Lee, a motivated CS major at Purdue University taking security and systems software track. I am passionate about cybersecurity, frontend/backend development, and robotics. I love crafting meaningful projects that make a positive impact. In my spare time, I love to learn red/blue teaming and coding for fun.",
         "interests": [
             "Red/Blue teaming",
             "Frontend/Backend development",
@@ -137,7 +137,9 @@
                 "/assets/images/aci/cases.png",
                 "/assets/images/aci/case.png",
                 "/assets/images/aci/tasks.png",
-                "/assets/images/aci/task.png",
+                "/assets/images/aci/task_queries.png",
+                "/assets/images/aci/rev_shell_cron_job_insomnia.png",
+                "/assets/images/aci/description_analysis.png",
                 "/assets/images/aci/jobs.png"
             ]
         },
