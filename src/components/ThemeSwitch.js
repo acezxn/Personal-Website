@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { ReactComponent as Sun } from "./../sun.svg"
-import { ReactComponent as Moon } from "./../moon.svg"
 import themeData from "./../data/theme.json"
+import { MdBrightnessLow } from "react-icons/md";
+import { MdBrightnessHigh } from "react-icons/md";
 
 export const ThemeSwitch = () => {
     const [theme, setTheme] = useState("");
@@ -37,9 +37,9 @@ export const ThemeSwitch = () => {
             <button style={{ backgroundColor: "transparent", border: "none" }} onClick={toggleTheme}>
                 {
                     theme === "light" ? (
-                        <Sun width={38} height={38} fill={themeData.light.primary_color}/>
+                        <MdBrightnessHigh size={30} color={themeData.light.primary_color}/>
                     ) : (
-                        <Moon width={35} height={35} fill={themeData.dark.primary_color} />
+                        <MdBrightnessLow size={30} color={themeData.dark.primary_color}/>
                     )
                 }
             </button>

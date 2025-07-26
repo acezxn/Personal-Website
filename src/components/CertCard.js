@@ -3,8 +3,12 @@ import profile from "./../data/profile.json";
 import Utils from "../objects/utils";
 import "./css/InfoCard.css"
 import { useEffect, useRef } from "react";
+import { Modal } from "./Modal";
+import { IoMdExpand } from "react-icons/io";
+import { IconButton } from "./widgets/IconButton";
 
-export const CertCard = () => {
+
+export const CertCard = ({ isModalOpen, onModalOpen, onModalClose }) => {
     const scrollableDiv = useRef(null);
     const scrollIndicator = useRef(null);
     const updateIndicator = () => {
@@ -41,13 +45,8 @@ export const CertCard = () => {
         globalResizeObserver.observe(document.body);
     }, [scrollableDiv.current]);
 
-    return (
-        <div className="info_card" ref={scrollableDiv} style={{ height: 200 }}>
-            <h6
-                className="monospace"
-                style={{
-                    color: "var(--primary-color)"
-                }}>Certifications</h6>
+    const CardContent = () => {
+        return <>
             {
                 Object.keys(profile.certifications).map((certification_type) => (
                     <>
@@ -79,6 +78,38 @@ export const CertCard = () => {
                     </>
                 ))
             }
+        </>
+    }
+
+    return (
+        <div className="info_card" ref={scrollableDiv} style={{ height: 200 }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <h6
+                    className="monospace"
+                    style={{
+                        color: "var(--primary-color)",
+                        margin: 0,
+                    }}
+                >
+                    Certifications
+                </h6>
+                <IconButton onClick={onModalOpen}>
+                    <IoMdExpand size={20} />
+                </IconButton>
+            </div>
+            <CardContent />
+            <Modal isOpen={isModalOpen} onClose={onModalClose}>
+                <h6
+                    className="monospace"
+                    style={{
+                        color: "var(--primary-color)",
+                        margin: 0,
+                    }}
+                >
+                    Certifications
+                </h6>
+                <CardContent />
+            </Modal>
             <div className="scroll_indicator" ref={scrollIndicator}></div>
         </div>
     )

@@ -1,8 +1,64 @@
 import "./css/InfoCard.css"
 import profile from "./../data/profile.json";
 import { useEffect, useRef } from "react";
+import { Modal } from "./Modal";
+import { IconButton } from "./widgets/IconButton";
+import { IoMdExpand } from "react-icons/io";
 
-export const GradesCard = () => {
+const CardContent = () => (
+    <>
+        <label className="field_title monospace"><b>Purdue University:</b></label>
+        <div style={{ marginBottom: 2 }}></div>
+        <div style={{ marginBottom: 2 }}></div>
+        <label className="field_title monospace">GPA:</label>
+        <label className="field_right monospace">{profile.grades.university.gpa}</label>
+        <hr />
+        <div style={{ marginBottom: 2 }}></div>
+        <table className="monospace">
+            <tr>
+                <th>Name</th>
+                <th>Title</th>
+                <th>Grade</th>
+            </tr>
+            {
+                profile.grades.university.courses.map((course) => (
+                    <tr>
+                        <td><a className="link" href={course.link} target="_blank" rel="noopener noreferrer">{course.code}</a></td>
+                        <td>{course.name}</td>
+                        <td>{course.grade}</td>
+                    </tr>
+                ))
+            }
+        </table>
+        <div style={{ marginBottom: 2 }}></div>
+        <label className="field_title monospace"><b>High School:</b></label>
+        <div style={{ marginBottom: 2 }}></div>
+        <div style={{ marginBottom: 2 }}></div>
+        <label className="field_title monospace">GPA:</label>
+        <label className="field_right monospace">{profile.grades.high_school.gpa}</label>
+        <hr />
+        <label className="field_title monospace">SAT:</label>
+        <label className="field_right monospace">{profile.grades.high_school.sat}</label>
+        <hr />
+        <div style={{ marginBottom: 2 }}></div>
+        <table className="monospace">
+            <tr>
+                <th>Name</th>
+                <th>Grade</th>
+            </tr>
+            {
+                profile.grades.high_school.courses.map((course) => (
+                    <tr>
+                        <td>{course.name}</td>
+                        <td>{course.grade}</td>
+                    </tr>
+                ))
+            }
+        </table>
+    </>
+);
+
+export const GradesCard = ({ isModalOpen, onModalOpen, onModalClose }) => {
     const scrollableDiv = useRef(null);
     const scrollIndicator = useRef(null);
     const updateIndicator = () => {
@@ -41,61 +97,25 @@ export const GradesCard = () => {
 
     return (
         <div className="info_card" ref={scrollableDiv} style={{ height: 200 }}>
-            <h6
-                className="monospace"
-                style={{
-                    color: "var(--primary-color)"
-                }}>Grades</h6>
-            <label className="field_title monospace"><b>Purdue University:</b></label>
-            <div style={{ marginBottom: 2 }}></div>
-            <div style={{ marginBottom: 2 }}></div>
-            <label className="field_title monospace">GPA:</label>
-            <label className="field_right monospace">{profile.grades.university.gpa}</label>
-            <hr />
-            <div style={{ marginBottom: 2 }}></div>
-            <table className="monospace">
-                <tr>
-                    <th>Name</th>
-                    <th>Title</th>
-                    <th>Grade</th>
-                </tr>
-                {
-                    profile.grades.university.courses.map((course) => (
-                        <tr>
-
-                            <td><a className="link" href={course.link} target="_blank" rel="noopener noreferrer">{course.code}</a></td>
-                            <td>{course.name}</td>
-                            <td>{course.grade}</td>
-                        </tr>
-                    ))
-                }
-            </table>
-            <div style={{ marginBottom: 2 }}></div>
-            <label className="field_title monospace"><b>High School:</b></label>
-            <div style={{ marginBottom: 2 }}></div>
-            <div style={{ marginBottom: 2 }}></div>
-            <label className="field_title monospace">GPA:</label>
-            <label className="field_right monospace">{profile.grades.high_school.gpa}</label>
-            <hr />
-            <label className="field_title monospace">SAT:</label>
-            <label className="field_right monospace">{profile.grades.high_school.sat}</label>
-            <hr />
-            <div style={{ marginBottom: 2 }}></div>
-            <table className="monospace">
-                <tr>
-                    <th>Name</th>
-                    <th>Grade</th>
-                </tr>
-                {
-                    profile.grades.high_school.courses.map((course) => (
-                        <tr>
-
-                            <td>{course.name}</td>
-                            <td>{course.grade}</td>
-                        </tr>
-                    ))
-                }
-            </table>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <h6
+                    className="monospace"
+                    style={{
+                        color: "var(--primary-color)"
+                    }}>Grades</h6>
+                <IconButton onClick={onModalOpen}>
+                    <IoMdExpand size={20} />
+                </IconButton>
+            </div>
+            <CardContent />
+            <Modal isOpen={isModalOpen} onClose={onModalClose}>
+                <h6
+                    className="monospace"
+                    style={{
+                        color: "var(--primary-color)"
+                    }}>Grades</h6>
+                <CardContent />
+            </Modal>
             <div className="scroll_indicator" ref={scrollIndicator}></div>
         </div>
     )

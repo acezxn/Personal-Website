@@ -6,8 +6,8 @@
         "font_primary_color": "#eff1ff",
         "font_secondary_color": "#000000",
         "error_color": "#cc3c3c",
-        "bg_color": "#14141f",
-        "widget_color": "#242436",
+        "bg_color": "#16161b",
+        "widget_color": "#242432",
         "widget_mask_color": "rgba(255, 255, 255, 0.1)",
         "number_color": "rgb(75, 255, 174)",
         "primary_font": "Roboto"
