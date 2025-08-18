@@ -71,6 +71,7 @@
             "Python",
             "Java",
             "Javascript",
+            "Typescript",
             "HTML",
             "CSS",
             "Bash"
@@ -91,6 +92,15 @@
         ]
     },
     "experiences": [
+        {
+            "name": "Academia Sinica, Taiwan",
+            "image": "https://file.apps.sinica.edu.tw/filepool/asweb/image/2023/09069AvPUpKavtRiXA11GxEs/Nankang%20Campus.jpg",
+            "role": "AI Researcher Intern",
+            "description": "Explored methods of adversarial attacks on neural network–based Host Intrusion Detection Systems (HIDS) by altering system call traces to evade detection. Introduced a new technique using an auto-regressive transformer, achieving up to a 163% higher evasion rate compared to the original approach presented in the study.",
+            "links": [
+                "https://www.sinica.edu.tw/"
+            ]
+        },
         {
             "name": "Financial Cybersecurity Laboratory, National Taipei University of Technology (NTUT)",
             "image": "https://oia.ntut.edu.tw/var/file/32/1032/img/3028/About_Taipei_Tech_pic01.jpg",
