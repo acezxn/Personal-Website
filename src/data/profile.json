@@ -208,6 +208,18 @@
             "gpa": "3.97 / 4.0",
             "courses": [
                 {
+                    "code": "CS42600",
+                    "link": "https://mktrm.github.io/cs426-fall25/",
+                    "name": "Computer Security",
+                    "grade": "A+"
+                },
+                {
+                    "code": "CS38100",
+                    "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs381.html",
+                    "name": "Intro to Analysis of Algorithms",
+                    "grade": "A-"
+                },
+                {
                     "code": "CS25000",
                     "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs250.html",
                     "name": "Computer Architecture",
