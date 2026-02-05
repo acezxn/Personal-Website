@@ -33,7 +33,6 @@ const Hammer = () => {
 
 export const LearnmorePage = () => {
     const hintRef = useRef(null);
-    const [hintClicked, setHintClicked] = useState(false);
     const [intervalId, setIntervalId] = useState(-1);
     const hintText = "Do you know what the secret code is?";
     const randomChars = "�☰☱﹋〆⑄␑␛ˁª£∆ˆåπ¬˜´ß∫≤▋";
