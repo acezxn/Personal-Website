@@ -141,15 +141,20 @@
     "projects": [
         {
             "name": "ACI (Work in Progress)",
-            "description": "An on-premise software stack aimed to automate common SOC investigation tasks with AI agents, specifically by performing automated investigations in Security Information and Event Management (SIEM) systems. This software stack ingests security case information, uses AI models to create investigation tasks, breaks them down into activities, and automatically generates and execute queries for relevant security events. Each model is pertained with unlabeled cybersecurity general knowledge and fine-tuned specifically for its task. It is integrated with Open Source SOC softwares (Wazuh, TheHive) for incident response.",
+            "description": "An on-premise software stack aimed to automate common SOC investigation tasks with AI agents, specifically by performing automated investigations in Security Information and Event Management (SIEM) systems. This software stack ingests security case information, creates investigation tasks, breaks them down into activities, and iteratively generates SIEM queries while evaluating the events queried. The agent is pretrained with security-related text such as Incident Response (IR) playbooks, and demonstrated superior SOC investigation planning compared to openai/gpt-oss.",
             "link": "https://github.com/Automatic-Case-Investigator",
             "images": [
                 "/assets/images/aci/cases.png",
                 "/assets/images/aci/case.png",
                 "/assets/images/aci/tasks.png",
-                "/assets/images/aci/task_queries.png",
-                "/assets/images/aci/description_analysis.png",
-                "/assets/images/aci/jobs.png"
+                "/assets/images/aci/activities.png",
+                "/assets/images/aci/escalation_attempt.png",
+                "/assets/images/aci/critique.png",
+                "/assets/images/aci/rev_shell.png",
+                "/assets/images/aci/rev_shell_log.png",
+                "/assets/images/aci/jobs.png",
+                "/assets/images/aci/cpt_vote_judges.png",
+                "/assets/images/aci/cpt_vote_majority.png"
             ]
         },
         {

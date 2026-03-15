@@ -4,6 +4,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { useEffect, useRef, useState } from "react";
 import theme from "./../data/theme.json"
 
+
 const Hammer = () => {
     const meshRef = useRef();
     let floatingSpeed = 0.02;
@@ -18,22 +19,23 @@ const Hammer = () => {
     });
 
     return (
-        <mesh ref={meshRef} position={[0, 1, 0]}>
-            <mesh position={[0, 0, 0]} rotation={[0, 0, Math.PI / 2]}>
-            <cylinderGeometry args={[0.5, 0.5, 1.5, 60]} />
-                <meshBasicMaterial color={theme.common.torus_color} wireframe />
+        <>
+            <mesh ref={meshRef} position={[0, 1, 0]}>
+                <mesh position={[0, 0, 0]} rotation={[0, 0, Math.PI / 2]}>
+                    <cylinderGeometry args={[0.5, 0.5, 1.5, 60]} />
+                    <meshBasicMaterial color={theme.common.torus_color} wireframe />
+                </mesh>
+                <mesh position={[0, -1.5, 0]}>
+                    <cylinderGeometry args={[0.1, 0.1, 2, 12]} />
+                    <meshBasicMaterial color={theme.common.torus_color} wireframe />
+                </mesh>
             </mesh>
-            <mesh position={[0, -1.5, 0]}>
-                <cylinderGeometry args={[0.1, 0.1, 2, 12]} />
-                <meshBasicMaterial color={theme.common.torus_color} wireframe />
-            </mesh>
-        </mesh>
+        </>
     );
 };
 
 export const LearnmorePage = () => {
     const hintRef = useRef(null);
-    const [hintClicked, setHintClicked] = useState(false);
     const [intervalId, setIntervalId] = useState(-1);
     const hintText = "Do you know what the secret code is?";
     const randomChars = "�☰☱﹋〆⑄␑␛ˁª£∆ˆåπ¬˜´ß∫≤▋";
@@ -46,12 +48,12 @@ export const LearnmorePage = () => {
                 newText = newText + randomChars.charAt(idx);
             }
         }
-        hintRef.current.textContent = newText;
+        if (hintRef.current) hintRef.current.textContent = newText;
     }
 
     const revealHint = () => {
         clearInterval(intervalId);
-        hintRef.current.textContent = hintText;
+        if (hintRef.current) hintRef.current.textContent = hintText;
     }
 
     useEffect(() => {
