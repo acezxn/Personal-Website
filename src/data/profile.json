@@ -25,11 +25,12 @@
         "link": "https://drive.google.com/file/d/1gfCVZPKeDIB_2XaX7DDHYFhtxEtNqwKc/preview"
     },
     "person_description": {
-        "whoami": "Welcome! I'm Cheng-En (Daniel) Lee, a motivated CS major at Purdue University taking security and systems software track. I am passionate about cybersecurity, frontend/backend development, artificial intelligence, and low level programming. I love crafting meaningful projects that make a positive impact.",
+        "whoami": "Welcome! I'm Cheng-En (Daniel) Lee, a motivated CS major at Purdue University taking security, systems, and software engineering track. My interests include AI security, AI for cybersecurity, and software engineering.",
         "interests": [
-            "Red/Blue teaming",
-            "Frontend/Backend development",
-            "Robotics"
+            "AI Security",
+            "AI for Cybersecurity",
+            "Red/Blue Teaming",
+            "Software Engineering"
         ],
         "mbti": {
             "name": "INTJ-T",
@@ -88,10 +89,19 @@
     },
     "experiences": [
         {
+            "name": "RepoAudit",
+            "image": "/assets/images/repoaudit/intro.png",
+            "role": "Part-time Contributor",
+            "description": "Extended repository-level code slicing algorithm for the RepoAudit project to detect buggy data propagation between scopes, enabling robust detection of data flow bugs across nested functions and non-local variables.",
+            "links": [
+                "https://github.com/acezxn/RepoAudit"
+            ]
+        },
+        {
             "name": "Academia Sinica, Taiwan",
             "image": "https://file.apps.sinica.edu.tw/filepool/asweb/image/2023/09069AvPUpKavtRiXA11GxEs/Nankang%20Campus.jpg",
             "role": "AI Researcher Intern",
-            "description": "Explored methods of adversarial attacks on neural network–based Host Intrusion Detection Systems (HIDS) by altering system call traces to evade detection. Introduced a new technique using an auto-regressive transformer, achieving up to a 163% higher evasion rate compared to the original approach presented in the study.",
+            "description": "Experimented evasion attacks of neural network–based Host Intrusion Detection Systems (HIDS). Proposed a transformer-based model for learning system log alteration, achieving up to a 163% higher evasion rate compared to the original approach presented in the study.",
             "links": [
                 "https://www.sinica.edu.tw/"
             ]
@@ -135,83 +145,67 @@
     ],
     "projects": [
         {
-            "name": "ACI (Work in Progress)",
-            "description": "An on-premise software stack aimed to automate common SOC investigation tasks with AI agents, specifically by performing automated investigations in Security Information and Event Management (SIEM) systems. This software stack ingests security case information, creates investigation tasks, breaks them down into activities, and iteratively generates SIEM queries while evaluating the events queried. The agent is pretrained with security-related text such as Incident Response (IR) playbooks, and demonstrated superior SOC investigation planning compared to openai/gpt-oss.",
-            "link": "https://github.com/Automatic-Case-Investigator",
+            "name": "Automatic Case Investigator (ACI)",
+            "description": "An on-premise SOC (Security Operations Center) agent platform that automates alert triage and multi-step incident investigation using agentic AI. Unlike many AI tools that focuses on fast triage, ACI focuses on deep, multi-step investigation, iteratively reasons over security alerts, and uncovers a broader attack story.",
+            "links": [
+                {
+                    "label": "Writeup",
+                    "url": "https://aci.acezxn.net/documents/blog/performing-multi-step-attack-analysis-with-agentic-ai"
+                },
+                {
+                    "label": "Github",
+                    "url": "https://github.com/Automatic-Case-Investigator/ACI"
+                }
+            ],
             "images": [
-                "/assets/images/aci/cases.png",
-                "/assets/images/aci/case.png",
-                "/assets/images/aci/tasks.png",
-                "/assets/images/aci/activities.png",
-                "/assets/images/aci/escalation_attempt.png",
-                "/assets/images/aci/critique.png",
-                "/assets/images/aci/rev_shell.png",
-                "/assets/images/aci/rev_shell_log.png",
-                "/assets/images/aci/jobs.png",
-                "/assets/images/aci/cpt_vote_judges.png",
-                "/assets/images/aci/cpt_vote_majority.png"
+                "/assets/images/aci/latest/intro.png",
+                "/assets/images/aci/latest/example_triage.png",
+                "/assets/images/aci/latest/example_investigation.png"
             ]
         },
         {
             "name": "JavaCry Ransomware Framework",
             "description": "A ransomware generation framework built entirely in Java, Featuring target directory encryption, secure management of encryption keys, and persistent reverse shell implant for Windows, Linux, and MacOS.",
-            "link": "https://github.com/acezxn/JavaCry",
+            "links": [
+                {
+                    "label": "GitHub",
+                    "url": "https://github.com/acezxn/JavaCry"
+                }
+            ],
             "images": [
                 "https://github.com/acezxn/JavaCry/raw/main/images/YourFilesHaveBeenEncrypted.png"
             ]
         },
         {
-            "name": "BoilerSyllabi",
-            "description": "My boilermake-xii hackathon project. BoilerSyllabi is an AI-powered syllabus extraction and analysis tool for Purdue students. It extracts course information and summarizes it in an organized manner, both accurately and concisely. It is also capable of web scraping Rate My Professor data about the course instructor, and describe them in a humorous manner.",
-            "link": "https://syllabus.acezxn.me/",
-            "images": [
-                "/assets/images/boilersyllabi/home.png",
-                "/assets/images/boilersyllabi/analysis.png"
-            ]
-        },
-        {
             "name": "Pathtracker Online",
             "description": "An online robot path following simulator designed for VEX Robotics Competition, allowing developers to design and test autonomous routes virtually to boost the development process.",
-            "link": "https://github.com/acezxn/Pathtracker-online",
+            "links": [
+                {
+                    "label": "GitHub",
+                    "url": "https://github.com/acezxn/Pathtracker-online"
+                }
+            ],
             "images": [
                 "/assets/images/pathtracker_online/pathtracker_online.gif"
-            ]
-        },
-        {
-            "name": "AnyScrape",
-            "description": "A web scraper written in javascript, featuring custom filtering selection of tag name, tag attribute, tag location (with linear expressions implemented), and delay.",
-            "link": "https://github.com/acezxn/AnyScrape",
-            "images": [
-                "/assets/images/anyscrape/reader.png",
-                "/assets/images/anyscrape/scrape_result.png"
-            ]
-        },
-        {
-            "name": "TeamOn",
-            "description": "An online team management tool using React JS, Material UI, and Firebase, aiming to help developers connect, brainstorm, and discuss as a team. Featured functionalities include customizable teaming permissions, real time task management, and real time communication.",
-            "link": "https://github.com/acezxn/TeamOn",
-            "images": [
-                "/assets/images/teamon/discussions.png",
-                "/assets/images/teamon/home.png",
-                "/assets/images/teamon/tasks.png",
-                "/assets/images/teamon/chat.png",
-                "/assets/images/teamon/stats.png"
-            ]
-        },
-        {
-            "name": "Grouping Optimization",
-            "description": "A web application designed to experiment with group satisfaction optimization algorithms using multiple self-invented algorithms. Featured functionalities including classroom management system and group optimization algorithms.",
-            "link": "https://github.com/acezxn/Grouping-optimization",
-            "images": [
-                "https://user-images.githubusercontent.com/14313049/211586141-5ca58b48-599a-47b7-ad9b-cb8e46b6c474.png",
-                "https://user-images.githubusercontent.com/14313049/211585733-3238b71e-2c72-44cf-a7c0-a92f213c67ef.png"
             ]
         }
     ],
     "grades": {
         "university": {
-            "gpa": "3.96 / 4.0",
+            "gpa": "3.97 / 4.0",
             "courses": [
+                {
+                    "code": "CS35500",
+                    "link": "https://www.cs.purdue.edu/academic-programs/courses/canonical/cs355.html",
+                    "name": "Intro to Cryptography",
+                    "grade": "A"
+                },
+                {
+                    "code": "CS40800",
+                    "link": "https://catalog.purdue.edu/preview_course_nopop.php?catoid=16&coid=166216",
+                    "name": "Software Testing",
+                    "grade": "A+"
+                },
                 {
                     "code": "CS42600",
                     "link": "https://mktrm.github.io/cs426-fall25/",
@@ -277,28 +271,6 @@
                     "link": "https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=201510&subj_code_in=MA&crse_numb_in=26100",
                     "name": "Calculus III",
                     "grade": "A+"
-                }
-            ]
-        },
-        "high_school": {
-            "gpa": "4.3 / 4.8",
-            "sat": 1490,
-            "courses": [
-                {
-                    "name": "AP Calculus BC",
-                    "grade": "5"
-                },
-                {
-                    "name": "AP Physics C Mechanics",
-                    "grade": "5"
-                },
-                {
-                    "name": "AP Physics C E & M",
-                    "grade": "5"
-                },
-                {
-                    "name": "AP Computer Science A",
-                    "grade": "5"
                 }
             ]
         }

@@ -9,6 +9,17 @@ import { useEffect, useState } from "react";
 export const ProjectsPage = () => {
     const [width, setWidth] = useState(window.innerWidth);
 
+    const renderLinks = (project) => {
+        return (project.links ?? []).map((link, index) => (
+            <div key={`${project.name}-link-${index}`} style={{ marginBottom: 4 }}>
+                <b style={{ marginRight: 4 }}>{link.label}:</b>
+                <a className="field_left monospace link" href={link.url} target="_blank" rel="noopener noreferrer">
+                    {link.url}
+                </a>
+            </div>
+        ));
+    };
+
     const renderImage = (item) => {
         return (
             <a href={item.original} target="_blank">
@@ -57,7 +68,7 @@ export const ProjectsPage = () => {
                                 <label className="field monospace">{project.description}</label>
                                 <br />
                                 <br />
-                                <label className="field_left monospace link"><a href={project.link}>[View on Github]</a></label>
+                                {renderLinks(project)}
                                 <hr />
                             </div>
                         )

@@ -30,31 +30,6 @@ const CardContent = () => (
                 ))
             }
         </table>
-        <div style={{ marginBottom: 2 }}></div>
-        <label className="field_title monospace"><b>High School:</b></label>
-        <div style={{ marginBottom: 2 }}></div>
-        <div style={{ marginBottom: 2 }}></div>
-        <label className="field_title monospace">GPA:</label>
-        <label className="field_right monospace">{profile.grades.high_school.gpa}</label>
-        <hr />
-        <label className="field_title monospace">SAT:</label>
-        <label className="field_right monospace">{profile.grades.high_school.sat}</label>
-        <hr />
-        <div style={{ marginBottom: 2 }}></div>
-        <table className="monospace">
-            <tr>
-                <th>Name</th>
-                <th>Grade</th>
-            </tr>
-            {
-                profile.grades.high_school.courses.map((course) => (
-                    <tr>
-                        <td>{course.name}</td>
-                        <td>{course.grade}</td>
-                    </tr>
-                ))
-            }
-        </table>
     </>
 );
 

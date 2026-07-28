@@ -10,14 +10,36 @@ import { IoMdExpand } from "react-icons/io";
 
 const CardContent = () => {
     const maxPreviewProjects = 4;
+    const getPrimaryLink = (project) => {
+        return project.links?.[0] ?? null;
+    };
+
+    const renderLinks = (project) => {
+        return (project.links ?? []).map((link, index) => (
+            <div key={`${project.name}-link-${index}`} style={{ marginBottom: 2 }}>
+                <a className="link monospace" href={link.url} target="_blank" rel="noopener noreferrer">
+                    <b>[{link.label}]</b>
+                </a>
+            </div>
+        ));
+    };
+
     return (
         <>
             {
                 profile.projects.map((project, index) => {
                     if (index < maxPreviewProjects) {
+                        const primaryLink = getPrimaryLink(project);
+
                         return (
-                            <>
-                                <label className="field_title monospace link" style={{ fontSize: 18 }}><a href={project.link}><b>{project.name}</b></a></label>
+                            <div key={project.name}>
+                                <label className="field_title monospace link" style={{ fontSize: 18 }}>
+                                    {primaryLink ? (
+                                        <a href={primaryLink.url} target="_blank" rel="noopener noreferrer"><b>{project.name}</b></a>
+                                    ) : (
+                                        <b>{project.name}</b>
+                                    )}
+                                </label>
                                 <div style={{ marginBottom: 2 }}></div>
                                 <a href={project.images[0]} target="_blank" rel="noopener noreferrer">
                                     <img src={project.images[0]} alt={project.images[0]} style={{
@@ -33,8 +55,9 @@ const CardContent = () => {
 
                                 <label className="monospace">{project.description}</label>
                                 <div style={{ marginBottom: 2 }}></div>
+                                {renderLinks(project)}
                                 <hr />
-                            </>
+                            </div>
                         )
                     } else {
                         return;
