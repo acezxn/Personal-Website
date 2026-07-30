@@ -100,7 +100,7 @@
         {
             "name": "Academia Sinica, Taiwan",
             "image": "https://file.apps.sinica.edu.tw/filepool/asweb/image/2023/09069AvPUpKavtRiXA11GxEs/Nankang%20Campus.jpg",
-            "role": "AI Researcher Intern",
+            "role": "Research Intern",
             "description": "Experimented evasion attacks of neural network–based Host Intrusion Detection Systems (HIDS). Proposed a transformer-based model for learning system log alteration, achieving up to a 163% higher evasion rate compared to the original approach presented in the study.",
             "links": [
                 "https://www.sinica.edu.tw/"
